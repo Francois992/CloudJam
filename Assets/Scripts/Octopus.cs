@@ -73,6 +73,16 @@ public class Octopus : MonoBehaviour
         }
 
         octopusSpeed *= malusSpeed;
+    }
+
+    public void HitByProjectile(float malusSpeed)
+    {
+        if (isInvinsible)
+        {
+            return;
+        }
+
+        octopusSpeed *= malusSpeed;
 
         Invoke("ResetSpeed", 2);
     }

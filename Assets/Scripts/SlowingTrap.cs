@@ -8,16 +8,20 @@ public class SlowingTrap : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.CompareTag(""))
+        //Debug.Log("Trigger");
+        if (collision.gameObject.CompareTag("Poulpe"))
         {
+            //Debug.Log("Un poulpe !");
             collision.gameObject.GetComponent<Octopus>().HitByTrap(1 - _speedDropRate / 100);
         }
     }
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        if (collision.gameObject.CompareTag(""))
+        //Debug.Log("Trigger");
+        if (collision.gameObject.CompareTag("Poulpe"))
         {
+            //Debug.Log("Un poulpe !");
             collision.gameObject.GetComponent<Octopus>().ResetSpeed();
         }
     }
