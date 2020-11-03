@@ -12,6 +12,12 @@ public class Octopus : MonoBehaviour
     private float octopusSpeed = 3f;
 
     [SerializeField]
+    private float octopusMaxSpeed = 5f;
+
+    [SerializeField]
+    private float octopusMinSpeed = 2f;
+
+    [SerializeField]
     private float invinsibleFrame = 0.75f;
 
     [SerializeField]
@@ -32,6 +38,7 @@ public class Octopus : MonoBehaviour
 
     private void Awake()
     {
+        octopusSpeed = Random.Range(octopusMinSpeed, octopusMaxSpeed);
         originalSpeed = octopusSpeed;
     }
 
