@@ -23,43 +23,43 @@ public class Player : MonoBehaviour
         {
             if (playerController.GetButton("AButton"))
             {
-                BetManager.instance.SelectHorse(playerId, 1);
                 bets--;
+                BetManager.instance.SelectHorse(playerId, 1, bets);
             }
             else if (playerController.GetButton("BButton"))
             {
-                BetManager.instance.SelectHorse(playerId, 2);
                 bets--;
+                BetManager.instance.SelectHorse(playerId, 2, bets);
             }
             else if (playerController.GetButton("XButton"))
             {
-                BetManager.instance.SelectHorse(playerId, 3);
                 bets--;
+                BetManager.instance.SelectHorse(playerId, 3, bets);
             }
             else if (playerController.GetButton("YButton"))
             {
-                BetManager.instance.SelectHorse(playerId, 4);
                 bets--;
+                BetManager.instance.SelectHorse(playerId, 4, bets);
             }
             else if (playerController.GetButton("downButton"))
             {
-                BetManager.instance.SelectHorse(playerId, 5);
                 bets--;
+                BetManager.instance.SelectHorse(playerId, 5, bets);
             }
             else if (playerController.GetButton("RightButton"))
             {
-                BetManager.instance.SelectHorse(playerId, 6);
                 bets--;
+                BetManager.instance.SelectHorse(playerId, 6, bets);
             }
             else if (playerController.GetButton("LeftButton"))
             {
-                BetManager.instance.SelectHorse(playerId, 7);
                 bets--;
+                BetManager.instance.SelectHorse(playerId, 7, bets);
             }
             else if (playerController.GetButton("UpButton"))
             {
-                BetManager.instance.SelectHorse(playerId, 8);
                 bets--;
+                BetManager.instance.SelectHorse(playerId, 8, bets);
             }
         }
         

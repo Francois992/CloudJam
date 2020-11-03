@@ -28,6 +28,7 @@ public class GameManager : MonoBehaviour
     public List<int> player4Bets = new List<int>();
 
     public List<Player> Players = new List<Player>();
+    public List<Octopus> OctoHorses = new List<Octopus>();
     [HideInInspector] public List<List<int>> PlayerBets = new List<List<int>>();
 
     [HideInInspector] public bool isBetting = true;
@@ -53,12 +54,10 @@ public class GameManager : MonoBehaviour
                 {
                     return;
                 }
-                else
-                {
-                    isBetting = false;
-                    BetManager.instance.gameObject.SetActive(false);
-                }
+                
             }
+            isBetting = false;
+            BetManager.instance.gameObject.SetActive(false);
         }
         
     }
