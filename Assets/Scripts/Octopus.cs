@@ -77,7 +77,7 @@ public class Octopus : MonoBehaviour
         Invoke("ResetSpeed", 2);
     }
 
-    private void ResetSpeed()
+    public void ResetSpeed()
     {
         isAlreadyStun = false;
         octopusSpeed = originalSpeed;
