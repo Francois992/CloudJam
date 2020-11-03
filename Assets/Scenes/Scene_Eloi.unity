@@ -151,8 +151,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c7a9cf2bf0d3a4326a3ed96f3c679f07, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isRacing: 0
+  isStartingRace: 0
   source: {fileID: 336135291}
-  menuMusic: {fileID: 8300000, guid: 4305cf5723c1d43c7b2312eae7593200, type: 3}
+  menuMusic: {fileID: 8300000, guid: 7e0f529c241db412cbee65850e393310, type: 3}
+  raceStartMusic: {fileID: 8300000, guid: 9110c5ed723074398ad4d80c994d6793, type: 3}
+  raceMusic: {fileID: 8300000, guid: 200e32fa40d8b418a899d3ed21f9b65e, type: 3}
+  victoryMusic: {fileID: 8300000, guid: 0ddb8f0b860034c54a8ae5ba5df563cb, type: 3}
+  creditsMusic: {fileID: 8300000, guid: b6cd0b0e97674419ea301f3ce36e9a3b, type: 3}
 --- !u!82 &336135291
 AudioSource:
   m_ObjectHideFlags: 0
@@ -164,7 +170,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
