@@ -21,6 +21,7 @@ public class GameManager : MonoBehaviour
     }
 
     public int playerNumber = 1;
+    [SerializeField] private CameraMovement gameCamera = null;
 
     public List<int> player1Bets = new List<int>();
     public List<int> player2Bets = new List<int>();
@@ -96,6 +97,7 @@ public class GameManager : MonoBehaviour
     public void StartRace()
     {
         isRacing = true;
+        gameCamera.cameraCanMove = true;
 
         for(int i = 0; i < OctoHorses.Count; i++)
         {

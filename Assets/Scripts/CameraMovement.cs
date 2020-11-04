@@ -11,12 +11,16 @@ public class CameraMovement : MonoBehaviour
     [SerializeField]
     private float cameraSpeed = 3.5f;
 
+    [SerializeField]
+    public bool cameraCanMove = false;
+
     #endregion
 
     #region Unity Methods
 
     private void FixedUpdate()
     {
+        if(cameraCanMove)
         transform.Translate(Vector3.right * cameraSpeed * Time.fixedDeltaTime);
     }
 
