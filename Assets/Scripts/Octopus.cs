@@ -9,7 +9,13 @@ public class Octopus : MonoBehaviour
     [Header("Octohorse Carac")]
 
     [SerializeField]
-    private float octopusSpeed = 3f;
+    public float octopusSpeed = 3f;
+
+    [SerializeField]
+    public float tenacity = 3f;
+
+    [SerializeField]
+    public float panache = 3f;
 
     [SerializeField]
     private float octopusMaxSpeed = 5f;
