@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 2
   tags:
   - Poulpe
+  - Obstacle
   layers:
   - Default
   - TransparentFX
