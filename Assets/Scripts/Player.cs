@@ -11,7 +11,7 @@ public class Player : MonoBehaviour
     public int bets = 1;
 
     // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
         playerController = ReInput.players.GetPlayer(playerId);
     }
