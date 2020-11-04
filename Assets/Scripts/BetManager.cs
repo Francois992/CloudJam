@@ -35,6 +35,8 @@ public class BetManager : MonoBehaviour
         playerImages.Add(player2Image);
         playerImages.Add(player3Image);
         playerImages.Add(player4Image);
+
+        gameObject.SetActive(false);
     }
 
     // Update is called once per frame

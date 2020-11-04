@@ -2,13 +2,17 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Player : MonoBehaviour
 {
     public Rewired.Player playerController;
     public int playerId = 0;
 
-    public int bets = 1;
+    public int bets = 0;
+
+    [SerializeField] private Image SelectFill = null;
+    [SerializeField] private float SelectFillSpeed = 2f;
 
     // Start is called before the first frame update
     void Start()
@@ -19,48 +23,49 @@ public class Player : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(bets > 0)
+        if(bets > 0 && GameManager.instance.IsBetting)
         {
             if (playerController.GetButton("AButton"))
             {
-                bets--;
-                BetManager.instance.SelectHorse(playerId, 1, bets);
+                SelectFill.fillAmount += SelectFillSpeed * Time.deltaTime;
+                if(SelectFill.fillAmount >= 1) {
+                    bets--;
+                    BetManager.instance.SelectHorse(playerId, 1, bets);
+                }
             }
             else if (playerController.GetButton("BButton"))
             {
-                bets--;
-                BetManager.instance.SelectHorse(playerId, 2, bets);
+                SelectFill.fillAmount += SelectFillSpeed * Time.deltaTime;
+                if (SelectFill.fillAmount >= 1)
+                {
+                    bets--;
+                    BetManager.instance.SelectHorse(playerId, 2, bets);
+                }
             }
             else if (playerController.GetButton("XButton"))
             {
-                bets--;
-                BetManager.instance.SelectHorse(playerId, 3, bets);
+                SelectFill.fillAmount += SelectFillSpeed * Time.deltaTime;
+                if (SelectFill.fillAmount >= 1)
+                {
+                    bets--;
+                    BetManager.instance.SelectHorse(playerId, 3, bets);
+                }
             }
             else if (playerController.GetButton("YButton"))
             {
-                bets--;
-                BetManager.instance.SelectHorse(playerId, 4, bets);
+                SelectFill.fillAmount += SelectFillSpeed * Time.deltaTime;
+                if (SelectFill.fillAmount >= 1)
+                {
+                    bets--;
+                    BetManager.instance.SelectHorse(playerId, 4, bets);
+                }
             }
-            else if (playerController.GetButton("downButton"))
+
+            else
             {
-                bets--;
-                BetManager.instance.SelectHorse(playerId, 5, bets);
+                SelectFill.fillAmount -= SelectFillSpeed * Time.deltaTime;
             }
-            else if (playerController.GetButton("RightButton"))
-            {
-                bets--;
-                BetManager.instance.SelectHorse(playerId, 6, bets);
-            }
-            else if (playerController.GetButton("LeftButton"))
-            {
-                bets--;
-                BetManager.instance.SelectHorse(playerId, 7, bets);
-            }
-            else if (playerController.GetButton("UpButton"))
-            {
-                bets--;
-                BetManager.instance.SelectHorse(playerId, 8, bets);
-            }
+            
         }
         
     }

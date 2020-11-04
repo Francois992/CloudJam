@@ -28,11 +28,26 @@ public class GameManager : MonoBehaviour
     public List<int> player4Bets = new List<int>();
 
     public List<Player> Players = new List<Player>();
+    [HideInInspector] public List<Player> playersBetting = new List<Player>();
     public List<Octopus> OctoHorses = new List<Octopus>();
     [HideInInspector] public List<List<int>> PlayerBets = new List<List<int>>();
 
-    [HideInInspector] public bool isBetting = true;
-    [HideInInspector] public bool isRacing = false;
+    public int betsAvailable = 1;
+
+    private bool isBetting = false;
+    public bool IsBetting
+    {
+        get
+        {
+            return isBetting;
+        }
+        set
+        {
+            isBetting = value;
+        }
+    }
+
+    private bool isRacing = false;
 
     // Start is called before the first frame update
     void Start()
@@ -43,14 +58,29 @@ public class GameManager : MonoBehaviour
         PlayerBets.Add(player4Bets);
     }
 
+    public void AddPlayers()
+    {
+        playersBetting.Add(Players[0]);
+        playersBetting.Add(Players[1]);
+        if (playerNumber >= 3) playersBetting.Add(Players[2]);
+        if (playerNumber >= 4) playersBetting.Add(Players[3]);
+
+        for(int i = 0; i < playersBetting.Count; i++)
+        {
+            playersBetting[i].bets = betsAvailable;
+
+        }
+        isBetting = true;
+    }
+
     // Update is called once per frame
     void Update()
     {
         if (isBetting)
         {
-            for (int i = 0; i < Players.Count; i++)
+            for (int i = 0; i < playersBetting.Count; i++)
             {
-                if (Players[i].bets > 0)
+                if (playersBetting[i].bets > 0)
                 {
                     return;
                 }
@@ -58,6 +88,7 @@ public class GameManager : MonoBehaviour
             }
             isBetting = false;
             BetManager.instance.gameObject.SetActive(false);
+            StartRace();
         }
         
     }
