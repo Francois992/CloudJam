@@ -20,7 +20,7 @@ public class PlayerSelectMusicScript : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         switch (nbPlayers)
         {
