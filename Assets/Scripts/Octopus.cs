@@ -21,6 +21,9 @@ public class Octopus : MonoBehaviour
     private float invinsibleFrame = 0.75f;
 
     [SerializeField]
+    private bool canRun = false;
+
+    [SerializeField]
     private bool isInvinsible = false;
 
     [SerializeField]
@@ -44,10 +47,20 @@ public class Octopus : MonoBehaviour
 
     private void FixedUpdate()
     {
-        transform.Translate(Vector3.right * octopusSpeed * Time.fixedDeltaTime);
+        if (canRun)
+        {
+            transform.Translate(Vector3.right * octopusSpeed * Time.fixedDeltaTime);
+        }
     }
 
     #endregion
+
+    public void HorseCanRun(bool nowRun)
+    {
+        canRun = nowRun;
+    }
+
+    #region Hit By
 
     public void HitByCoconut()
     {
@@ -94,6 +107,10 @@ public class Octopus : MonoBehaviour
         Invoke("ResetSpeed", 2);
     }
 
+    #endregion
+
+    #region Reset
+
     public void ResetSpeed()
     {
         isAlreadyStun = false;
@@ -109,4 +126,6 @@ public class Octopus : MonoBehaviour
     {
         isInvinsible = false;
     }
+
+    #endregion
 }
