@@ -21,6 +21,11 @@ public class Octopus : MonoBehaviour
     private float invinsibleFrame = 0.75f;
 
     [SerializeField]
+    private float cocoStun = 0.25f;
+
+    [Header("Octohorse Bool")]
+
+    [SerializeField]
     private bool canRun = false;
 
     [SerializeField]
@@ -90,7 +95,7 @@ public class Octopus : MonoBehaviour
         if (isAlreadyStun)
         {
             octopusSpeed = 0;
-            Invoke("ResetSpeed", 0.25f);
+            Invoke("ResetSpeed", cocoStun);
         }
         else
         {
