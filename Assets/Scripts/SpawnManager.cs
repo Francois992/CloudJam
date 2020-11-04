@@ -24,8 +24,8 @@ public class SpawnManager : MonoBehaviour
 
         foreach (Transform transform in horseSpawnLocation)
         {
-            Octopus horse = Instantiate(horsePrefab, transform).GetComponent<Octopus>();
-            horse.HorseCanRun(true);
+            //Octopus horse = Instantiate(horsePrefab, transform).GetComponent<Octopus>();
+            //horse.HorseCanRun(true);
             ySpawnLocation.Add(transform.position.y);
             timers.Add(Random.Range(0f, timeBetweenObstacles));
         }
