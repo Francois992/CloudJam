@@ -20,7 +20,7 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    public int playerNumber = 4;
+    public int playerNumber = 1;
 
     public List<int> player1Bets = new List<int>();
     public List<int> player2Bets = new List<int>();
@@ -65,6 +65,11 @@ public class GameManager : MonoBehaviour
     public void StartRace()
     {
         isRacing = true;
+
+        for(int i = 0; i < OctoHorses.Count; i++)
+        {
+            OctoHorses[i].HorseCanRun(true);
+        }
     }
 
     public void ResetRace()
