@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class PlayerSelectMusicScript : MonoBehaviour
 {
+    private PlayerSelectMusicScript _instance;
+
     public int nbPlayers;
     public int musicVolume = 1;
     public AudioSource source0Player;
@@ -12,6 +14,18 @@ public class PlayerSelectMusicScript : MonoBehaviour
     public AudioSource source3Player;
     public AudioSource source4Player;
 
+    void Awake()
+    {
+        if (_instance == null)
+        {
+            _instance = this;
+            DontDestroyOnLoad(gameObject);
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
+    }
 
     // Start is called before the first frame update
     void Start()
