@@ -42,9 +42,9 @@ public class Octopus : MonoBehaviour
         originalSpeed = octopusSpeed;
     }
 
-    private void Update()
+    private void FixedUpdate()
     {
-        transform.Translate(Vector3.right * octopusSpeed * Time.deltaTime);
+        transform.Translate(Vector3.right * octopusSpeed * Time.fixedDeltaTime);
     }
 
     #endregion
