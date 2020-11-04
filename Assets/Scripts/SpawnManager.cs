@@ -63,7 +63,7 @@ public class SpawnManager : MonoBehaviour
             Instantiate(toSpawn);
             
             Vector2 newPos = spawnObstable.transform.position;
-            newPos.x += 1;
+            newPos.x += 5;
             newPos.y = ySpawnLocation[i];
             toSpawn.transform.position = newPos;
         }

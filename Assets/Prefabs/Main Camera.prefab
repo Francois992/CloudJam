@@ -166,6 +166,8 @@ GameObject:
   m_Component:
   - component: {fileID: 5486748531514110039}
   - component: {fileID: 5486748531514110036}
+  - component: {fileID: 7919302923102816040}
+  - component: {fileID: 4805904580171540206}
   m_Layer: 0
   m_Name: BackLimit
   m_TagString: Untagged
@@ -213,3 +215,36 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 15.889271}
   m_EdgeRadius: 0
+--- !u!114 &7919302923102816040
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5486748531514110038}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ce487cd3682e1f64296cafb1237397dd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!50 &4805904580171540206
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5486748531514110038}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 0.0001
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 1
+  m_Constraints: 6
