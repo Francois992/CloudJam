@@ -14,6 +14,18 @@ public class ThrowThing : MonoBehaviour
 
     #endregion
 
+    #region Fields
+
+    private BoxCollider2D _bc2D;
+
+    #endregion
+
+    private void Start()
+    {
+        _bc2D = GetComponent<BoxCollider2D>();
+        Invoke("CanCollide", 0.3f);
+    }
+
     public eThrowType GetEThrowType()
     {
         return throwType;
@@ -22,6 +34,11 @@ public class ThrowThing : MonoBehaviour
     void FixedUpdate()
     {
         transform.Translate(Vector3.right * speed * Time.fixedDeltaTime);
+    }
+
+    private void CanCollide()
+    {
+        _bc2D.enabled = true;
     }
 
 }

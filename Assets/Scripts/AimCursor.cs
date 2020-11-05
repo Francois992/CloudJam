@@ -66,9 +66,12 @@ public class AimCursor : MonoBehaviour
 
         transform.Translate(new Vector2(xPos, yPos) * aimSpeed * Time.fixedDeltaTime);
 
-        if (playerController.GetButton("AButton") && canThrowCoconut)
+        if (GameManager.instance.IsRacing)
         {
-            ThrowCoconut();
+            if (playerController.GetButton("AButton") && canThrowCoconut)
+            {
+                ThrowCoconut();
+            }
         }
     }
 

@@ -25,6 +25,7 @@ public class GameManager : MonoBehaviour
 
     public int playerNumber = 1;
     [SerializeField] private CameraMovement gameCamera = null;
+    public CameraMovement GameCamera { get { return gameCamera; } }
 
     public List<int> player1Bets = new List<int>();
     public List<int> player2Bets = new List<int>();
@@ -61,6 +62,7 @@ public class GameManager : MonoBehaviour
     }
 
     private bool isRacing = false;
+    public bool IsRacing { get { return isRacing; } }
     private bool CountDown = false;
 
     // Start is called before the first frame update
@@ -70,6 +72,8 @@ public class GameManager : MonoBehaviour
         PlayerBets.Add(player2Bets);
         PlayerBets.Add(player3Bets);
         PlayerBets.Add(player4Bets);
+
+        countDownCanvas.gameObject.SetActive(false);
     }
 
     private void FixedUpdate()
@@ -138,6 +142,8 @@ public class GameManager : MonoBehaviour
         {    
             if(elapsedTimeCountDown <= 5)
             {
+                countDownCanvas.gameObject.SetActive(true);
+
                 elapsedTimeCountDown += Time.deltaTime;
 
                 countDownText.text = (5 - (int)elapsedTimeCountDown).ToString();
