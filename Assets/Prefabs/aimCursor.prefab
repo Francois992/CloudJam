@@ -126,3 +126,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 0}
+  aimSpeed: 7.5
+  coconutThing: {fileID: 0}
+  coconutCD: 1
