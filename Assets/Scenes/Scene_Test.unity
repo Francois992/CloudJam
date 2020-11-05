@@ -2217,11 +2217,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: BetScreen
       objectReference: {fileID: 0}
-    - target: {fileID: 8608978516840573674, guid: c97a7f6043196db42aad01560ad72ba3,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 8608978517649951452, guid: c97a7f6043196db42aad01560ad72ba3,
         type: 3}
       propertyPath: m_AnchorMin.y
@@ -13553,11 +13548,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: PlayerNumCanvas
       objectReference: {fileID: 0}
-    - target: {fileID: 2412759529891401834, guid: e0346c5fbe0c91a42ba08daa7d9d9639,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 2412759530142690988, guid: e0346c5fbe0c91a42ba08daa7d9d9639,
         type: 3}
       propertyPath: m_AnchorMin.y
@@ -13574,16 +13564,6 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2412759530142690988, guid: e0346c5fbe0c91a42ba08daa7d9d9639,
-        type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8767070822038320301, guid: e0346c5fbe0c91a42ba08daa7d9d9639,
-        type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8767070822038320301, guid: e0346c5fbe0c91a42ba08daa7d9d9639,
         type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 0
