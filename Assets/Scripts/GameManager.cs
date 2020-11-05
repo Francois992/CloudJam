@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
@@ -40,7 +41,10 @@ public class GameManager : MonoBehaviour
     public int betsAvailable = 1;
 
     public int gameLengthInSec = 10;
-    public float elapsedTime = 0;
+    private float elapsedTime = 0;
+    private float elapsedTimeCountDown = 0;
+    [SerializeField]private Text countDownText = null;
+    [SerializeField]private Canvas countDownCanvas = null;
 
     private bool isBetting = false;
     public bool IsBetting
@@ -56,6 +60,7 @@ public class GameManager : MonoBehaviour
     }
 
     private bool isRacing = false;
+    private bool CountDown = false;
 
     // Start is called before the first frame update
     void Start()
@@ -109,7 +114,7 @@ public class GameManager : MonoBehaviour
             }
             isBetting = false;
             BetManager.instance.gameObject.SetActive(false);
-            StartRace();
+            CountDown = true;
         }
 
         if (isRacing)
@@ -121,7 +126,24 @@ public class GameManager : MonoBehaviour
                 EndRace();
             }
         }
-        
+
+        if(!isBetting && !isRacing && CountDown)
+        {    
+            if(elapsedTimeCountDown <= 5)
+            {
+                elapsedTimeCountDown += Time.deltaTime;
+
+                countDownText.text = (5 - (int)elapsedTimeCountDown).ToString();
+            }
+            else
+            {
+                CountDown = false;
+                countDownCanvas.gameObject.SetActive(false);
+                StartRace();
+            }
+            
+        }
+
     }
 
     public void StartRace()
