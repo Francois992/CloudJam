@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class ResultManager : MonoBehaviour
@@ -89,6 +90,6 @@ public class ResultManager : MonoBehaviour
     
     public void MainMenu()
     {
-        
+        SceneManager.LoadScene("UI_Scene");
     }
 }
