@@ -1,6 +1,7 @@
 ﻿using Rewired;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 public class GameManager : MonoBehaviour
@@ -57,6 +58,19 @@ public class GameManager : MonoBehaviour
         PlayerBets.Add(player2Bets);
         PlayerBets.Add(player3Bets);
         PlayerBets.Add(player4Bets);
+    }
+
+    private void FixedUpdate()
+    {
+        if (!isRacing) return;
+
+        List<Octopus> tmpOcto = OctoHorses.OrderBy(octo => octo.transform.position.x).ToList();
+
+
+        for (int i = 0; i < tmpOcto.Count; i++)
+        {
+            tmpOcto[i].SetPosition(i + 1);
+        }
     }
 
     public void AddPlayers()
