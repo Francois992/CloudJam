@@ -105,7 +105,7 @@ public class Octopus : MonoBehaviour
     private float originalSpeed;
     private float tenacityPercent;
 
-    private bool canBreathAgain = true;
+    public bool canBreathAgain = true;
 
     private bool isCheckingSecondBreath = false;
     private float currentSecondBreathCheckTimer = 0;
@@ -364,7 +364,7 @@ public class Octopus : MonoBehaviour
         }
     }
 
-    private void ActiveSecondBreath()
+    public void ActiveSecondBreath()
     {
         canBreathAgain = false;
 
