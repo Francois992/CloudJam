@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
 public class ResultManager : MonoBehaviour
@@ -25,6 +26,8 @@ public class ResultManager : MonoBehaviour
     [SerializeField] private Text Player3Result = null;
     [SerializeField] private Text Player4Result = null;
 
+    [SerializeField] private GameObject defaultSelectedButton = null;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -39,6 +42,9 @@ public class ResultManager : MonoBehaviour
 
     public void ShowResults()
     {
+        EventSystem.current.SetSelectedGameObject(null);
+        EventSystem.current.SetSelectedGameObject(defaultSelectedButton);
+
         HorseWinner.sprite = GameManager.instance.OctoHorses[0].GetComponent<SpriteRenderer>().sprite;
         HorseWinnerName.text += " "+GameManager.instance.OctoHorses[0].attribute.name;
 
