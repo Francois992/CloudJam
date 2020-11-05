@@ -346,21 +346,6 @@ PrefabInstance:
       propertyPath: PlayerSelectAudioManager
       value: 
       objectReference: {fileID: 301051549}
-    - target: {fileID: 7279222900796533268, guid: de7cb94d1ff2244e5861f8b6df29c52b,
-        type: 3}
-      propertyPath: raceMusic
-      value: 
-      objectReference: {fileID: 8300000, guid: e22f9111e211c40a6bd21ed4d6471934, type: 3}
-    - target: {fileID: 7279222900796533268, guid: de7cb94d1ff2244e5861f8b6df29c52b,
-        type: 3}
-      propertyPath: raceMusicNormal
-      value: 
-      objectReference: {fileID: 8300000, guid: 555ae7accad364a6ea395895ee256e3f, type: 3}
-    - target: {fileID: 7279222900796533268, guid: de7cb94d1ff2244e5861f8b6df29c52b,
-        type: 3}
-      propertyPath: raceMusicBase
-      value: 
-      objectReference: {fileID: 8300000, guid: e22f9111e211c40a6bd21ed4d6471934, type: 3}
     - target: {fileID: 7279222900796533271, guid: de7cb94d1ff2244e5861f8b6df29c52b,
         type: 3}
       propertyPath: m_Name

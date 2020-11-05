@@ -53,14 +53,13 @@ MonoBehaviour:
   isSecondBreath: 0
   isVictorious: 0
   isCredits: 0
-  PlayerSelectAudioManager: {fileID: 5480220129211685014, guid: acd43b68beaf94dad88329938a17541a,
-    type: 3}
+  PlayerSelectAudioManager: {fileID: 0}
   source: {fileID: 7279222900796533269}
   sourceSecondBreath: {fileID: 7279222900796533267}
   sourceNormal: {fileID: 5379657380572142443}
   menuMusic: {fileID: 8300000, guid: 7e0f529c241db412cbee65850e393310, type: 3}
-  raceStartMusic: {fileID: 8300000, guid: 08f32580beddb459f915bc440427b9ee, type: 3}
-  raceMusicBase: {fileID: 0}
+  raceStartMusic: {fileID: 8300000, guid: 26f9291c38b7747b8b935e43289c84f8, type: 3}
+  raceMusicBase: {fileID: 8300000, guid: e22f9111e211c40a6bd21ed4d6471934, type: 3}
   raceMusicNormal: {fileID: 8300000, guid: 555ae7accad364a6ea395895ee256e3f, type: 3}
   secondBreathLoop: {fileID: 8300000, guid: c2812cf79e531459d96e13d9c23b9cee, type: 3}
   victoryMusic: {fileID: 8300000, guid: 0ddb8f0b860034c54a8ae5ba5df563cb, type: 3}

@@ -110,7 +110,7 @@ public class MusicScript : MonoBehaviour
             {
                 Debug.Log("Second Breath Music Starts");
                 sourceNormal.volume = 0;
-                sourceSecondBreath.volume = 1;
+                sourceSecondBreath.volume = 1f;
             }
             else
             {
