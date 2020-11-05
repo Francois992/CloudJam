@@ -19,6 +19,8 @@ public class MusicScript : MonoBehaviour
 
     public bool isCredits;
 
+    public int nbplayers;
+
     public GameObject PlayerSelectAudioManager;
 
     public AudioSource source;
@@ -33,7 +35,7 @@ public class MusicScript : MonoBehaviour
     public AudioClip victoryMusic;
     public AudioClip creditsMusic;
 
-    void Awake()
+  /*  void Awake()
     {
         if (_instance == null)
         {
@@ -44,7 +46,7 @@ public class MusicScript : MonoBehaviour
         {
             Destroy(gameObject);
         }
-    }
+    } */
 
     // Start is called before the first frame update
     void Start()
@@ -108,13 +110,13 @@ public class MusicScript : MonoBehaviour
             }
             if (isSecondBreath && source.clip == raceMusicBase)
             {
-                Debug.Log("Second Breath Music Starts");
+                //Debug.Log("Second Breath Music Starts");
                 sourceNormal.volume = 0;
                 sourceSecondBreath.volume = 1f;
             }
             else
             {
-                Debug.Log("Second Breath Music Stops");
+                //Debug.Log("Second Breath Music Stops");
                 sourceNormal.volume = 1;
                 sourceSecondBreath.volume = 0;
             }
@@ -146,5 +148,36 @@ public class MusicScript : MonoBehaviour
         sourceSecondBreath.Stop();
         sourceNormal.Stop();
         PlayerSelectAudioManager.SetActive(false);
+    }
+
+    void Race()
+        {
+        if (!source.isPlaying && source.clip == raceStartMusic)
+        {
+            source.clip = raceMusicBase;
+            source.loop = true;
+            source.Play();
+
+            sourceSecondBreath.clip = secondBreathLoop;
+            sourceSecondBreath.loop = true;
+            sourceSecondBreath.Play();
+
+            sourceNormal.clip = raceMusicNormal;
+            sourceNormal.loop = true;
+            sourceNormal.Play();
+            //isRacing = false;
+        }
+        if (isSecondBreath && source.clip == raceMusicBase)
+        {
+            //Debug.Log("Second Breath Music Starts");
+            sourceNormal.volume = 0;
+            sourceSecondBreath.volume = 1f;
+        }
+        else
+        {
+            //Debug.Log("Second Breath Music Stops");
+            sourceNormal.volume = 1;
+            sourceSecondBreath.volume = 0;
+        }
     }
 }

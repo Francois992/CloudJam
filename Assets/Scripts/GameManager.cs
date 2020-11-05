@@ -4,10 +4,12 @@ using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
     public static GameManager instance;
+    public MusicScript musicManager;
 
     void Awake()
     {
@@ -41,7 +43,10 @@ public class GameManager : MonoBehaviour
     public int betsAvailable = 1;
 
     public int gameLengthInSec = 10;
-    public float elapsedTime = 0;
+    private float elapsedTime = 0;
+    private float elapsedTimeCountDown = 0;
+    [SerializeField]private Text countDownText = null;
+    [SerializeField]private Canvas countDownCanvas = null;
 
     private bool isBetting = false;
     public bool IsBetting
@@ -58,6 +63,7 @@ public class GameManager : MonoBehaviour
 
     private bool isRacing = false;
     public bool IsRacing { get { return isRacing; } }
+    private bool CountDown = false;
 
     // Start is called before the first frame update
     void Start()
@@ -66,6 +72,8 @@ public class GameManager : MonoBehaviour
         PlayerBets.Add(player2Bets);
         PlayerBets.Add(player3Bets);
         PlayerBets.Add(player4Bets);
+
+        countDownCanvas.gameObject.SetActive(false);
     }
 
     private void FixedUpdate()
@@ -91,9 +99,10 @@ public class GameManager : MonoBehaviour
         for(int i = 0; i < playersBetting.Count; i++)
         {
             playersBetting[i].bets = betsAvailable;
-
         }
         isBetting = true;
+
+        musicManager.isPlayerSelect = true;
     }
 
     // Update is called once per frame
@@ -101,21 +110,26 @@ public class GameManager : MonoBehaviour
     {
         if (isBetting)
         {
+            //musicManager.isPlayerSelect = true;
+
             for (int i = 0; i < playersBetting.Count; i++)
             {
                 if (playersBetting[i].bets > 0)
                 {
+                    musicManager.nbplayers = i;
                     return;
                 }
                 
             }
             isBetting = false;
             BetManager.instance.gameObject.SetActive(false);
-            StartRace();
+            CountDown = true;
         }
 
         if (isRacing)
         {
+            //musicManager.isStartingRace = true;
+
             elapsedTime += Time.deltaTime;
 
             if(elapsedTime >= gameLengthInSec)
@@ -123,7 +137,26 @@ public class GameManager : MonoBehaviour
                 EndRace();
             }
         }
-        
+
+        if(!isBetting && !isRacing && CountDown)
+        {    
+            if(elapsedTimeCountDown <= 5)
+            {
+                countDownCanvas.gameObject.SetActive(true);
+
+                elapsedTimeCountDown += Time.deltaTime;
+
+                countDownText.text = (5 - (int)elapsedTimeCountDown).ToString();
+            }
+            else
+            {
+                CountDown = false;
+                countDownCanvas.gameObject.SetActive(false);
+                StartRace();
+            }
+            
+        }
+
     }
 
     public void StartRace()
@@ -131,7 +164,9 @@ public class GameManager : MonoBehaviour
         isRacing = true;
         gameCamera.cameraCanMove = true;
 
-        for(int i = 0; i < OctoHorses.Count; i++)
+        musicManager.isStartingRace = true;
+
+        for (int i = 0; i < OctoHorses.Count; i++)
         {
             OctoHorses[i].HorseCanRun(true);
         }
@@ -153,7 +188,10 @@ public class GameManager : MonoBehaviour
         }
         OctoHorsesSorted = OctoHorses;
         OctoHorsesSorted.Sort((s1, s2) => s1.transform.position.x.CompareTo(s2.transform.position.x));
-        for(int j = 0; j < playersBetting.Count; j++)
+
+        musicManager.isVictorious = true;
+
+        for (int j = 0; j < playersBetting.Count; j++)
         {
             if(OctoHorsesSorted[0] == OctoHorses[0])
             {
