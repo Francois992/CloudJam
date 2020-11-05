@@ -12,7 +12,8 @@ public class SlowingTrap : MonoBehaviour
         if (collision.gameObject.CompareTag("Poulpe"))
         {
             //Debug.Log("Un poulpe !");
-            collision.gameObject.GetComponent<Octopus>().HitByTrap(1 - _speedDropRate / 100);
+            //collision.gameObject.GetComponent<Octopus>().HitByTrap(1 - _speedDropRate / 100);
+            collision.gameObject.GetComponent<Octopus>().HitByTrap(_speedDropRate);
         }
     }
 
