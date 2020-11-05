@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -13,7 +14,6 @@ public class GameManager : MonoBehaviour
         if (instance == null)
         {
             instance = this;
-            DontDestroyOnLoad(gameObject);
         }
         else
         {
@@ -32,9 +32,15 @@ public class GameManager : MonoBehaviour
     public List<Player> Players = new List<Player>();
     [HideInInspector] public List<Player> playersBetting = new List<Player>();
     public List<Octopus> OctoHorses = new List<Octopus>();
+    [HideInInspector] public List<Octopus> OctoHorsesSorted = new List<Octopus>();
     [HideInInspector] public List<List<int>> PlayerBets = new List<List<int>>();
 
+    [HideInInspector] public Octopus HorseWinner;
+
     public int betsAvailable = 1;
+
+    public int gameLengthInSec = 10;
+    public float elapsedTime = 0;
 
     private bool isBetting = false;
     public bool IsBetting
@@ -105,6 +111,16 @@ public class GameManager : MonoBehaviour
             BetManager.instance.gameObject.SetActive(false);
             StartRace();
         }
+
+        if (isRacing)
+        {
+            elapsedTime += Time.deltaTime;
+
+            if(elapsedTime >= gameLengthInSec)
+            {
+                EndRace();
+            }
+        }
         
     }
 
@@ -119,9 +135,49 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    public void ResetRace()
+    public void EndRace()
     {
         isRacing = false;
+        StartCoroutine(EndCountDown());
+    }
+
+    private IEnumerator EndCountDown()
+    {
+        yield return new WaitForSeconds(4);
+        gameCamera.cameraCanMove = false;
+        for (int i = 0; i < OctoHorses.Count; i++)
+        {
+            OctoHorses[i].HorseCanRun(false);
+        }
+        OctoHorsesSorted = OctoHorses;
+        OctoHorsesSorted.Sort((s1, s2) => s1.transform.position.x.CompareTo(s2.transform.position.x));
+        for(int j = 0; j < playersBetting.Count; j++)
+        {
+            if(OctoHorsesSorted[0] == OctoHorses[0])
+            {
+                if (PlayerBets[j][0] == 1) Players[j].hasWon = true;
+            }
+            else if (OctoHorsesSorted[0] == OctoHorses[1])
+            {
+                if (PlayerBets[j][0] == 2) Players[j].hasWon = true;
+            }
+            else if (OctoHorsesSorted[0] == OctoHorses[2])
+            {
+                if (PlayerBets[j][0] == 3) Players[j].hasWon = true;
+            }
+            else if (OctoHorsesSorted[0] == OctoHorses[3])
+            {
+                if (PlayerBets[j][0] == 4) Players[j].hasWon = true;
+            }
+        }
+        ResultManager.instance.gameObject.SetActive(true);
+        ResultManager.instance.ShowResults();
+    }
+
+    public void ResetRace()
+    {
+
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
 
         player1Bets = new List<int>();
         player2Bets = new List<int>();

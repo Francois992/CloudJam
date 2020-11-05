@@ -118,6 +118,8 @@ public class Octopus : MonoBehaviour
     private float timer = 0f;
 
     private bool isSlowed = false;
+
+    [HideInInspector] public BetManager.HorseAttribute attribute;
     #endregion
 
     #region Unity Methods

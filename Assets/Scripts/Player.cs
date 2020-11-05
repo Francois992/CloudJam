@@ -14,6 +14,8 @@ public class Player : MonoBehaviour
     [SerializeField] private Image SelectFill = null;
     [SerializeField] private float SelectFillSpeed = 2f;
 
+    [HideInInspector] public bool hasWon = false;
+    
     // Start is called before the first frame update
     void Awake()
     {
