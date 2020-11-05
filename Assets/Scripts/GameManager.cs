@@ -187,7 +187,7 @@ public class GameManager : MonoBehaviour
             OctoHorses[i].HorseCanRun(false);
         }
         OctoHorsesSorted = OctoHorses;
-        OctoHorsesSorted.Sort((s1, s2) => s1.transform.position.x.CompareTo(s2.transform.position.x));
+        OctoHorsesSorted.Sort((s1, s2) => s2.transform.position.x.CompareTo(s1.transform.position.x));
 
         musicManager.isVictorious = true;
 

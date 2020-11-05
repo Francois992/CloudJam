@@ -106,6 +106,7 @@ public class Octopus : MonoBehaviour
     private float tenacityPercent;
 
     public bool canBreathAgain = true;
+    private bool inSecondBreath = false;
 
     private bool isCheckingSecondBreath = false;
     private float currentSecondBreathCheckTimer = 0;
@@ -157,7 +158,7 @@ public class Octopus : MonoBehaviour
 
     private void Update()
     {
-        if (isSlowed) return;
+        if (isSlowed || inSecondBreath) return;
 
         timer += Time.deltaTime;
         octopusSpeed = Mathf.Lerp(originalSpeed - ecartTopSpeed, originalSpeed + ecartTopSpeed, Mathf.Cos(timer));
@@ -367,10 +368,11 @@ public class Octopus : MonoBehaviour
     public void ActiveSecondBreath()
     {
         canBreathAgain = false;
+        inSecondBreath = true;
 
         isInvinsible = true;
 
-        octopusSpeed *= secondBreathSpeedBonus;
+        octopusSpeed = Mathf.Clamp(octopusSpeed * secondBreathSpeedBonus, octopusMinSpeed, octopusMaxSpeed);
 
         Invoke("ResetSpeed", secondBreathDuration);
         Invoke("ResetInvinsible", secondBreathDuration);
@@ -381,6 +383,7 @@ public class Octopus : MonoBehaviour
 
     private void StopSecondBreathAnimation()
     {
+        inSecondBreath = false;
         animator.SetBool("secondBreath", false);
     }
 
