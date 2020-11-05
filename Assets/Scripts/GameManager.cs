@@ -23,6 +23,7 @@ public class GameManager : MonoBehaviour
 
     public int playerNumber = 1;
     [SerializeField] private CameraMovement gameCamera = null;
+    public CameraMovement GameCamera { get { return gameCamera; } }
 
     public List<int> player1Bets = new List<int>();
     public List<int> player2Bets = new List<int>();
@@ -56,6 +57,7 @@ public class GameManager : MonoBehaviour
     }
 
     private bool isRacing = false;
+    public bool IsRacing { get { return isRacing; } }
 
     // Start is called before the first frame update
     void Start()
