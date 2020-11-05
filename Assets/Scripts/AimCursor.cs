@@ -72,6 +72,13 @@ public class AimCursor : MonoBehaviour
             {
                 ThrowCoconut();
             }
+
+            if (playerController.GetButton("BButton"))
+            {
+                Debug.LogError("B !!!");
+                GameManager.instance.OctoHorses[0].canBreathAgain = true;
+                GameManager.instance.OctoHorses[0].ActiveSecondBreath();
+            }
         }
     }
 
