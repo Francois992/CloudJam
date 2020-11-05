@@ -43,6 +43,9 @@ public class Octopus : MonoBehaviour
     [Header("Second Souffle")]
 
     [SerializeField]
+    private float secondBreathCheckDelay = 2f;
+
+    [SerializeField]
     private float secondBreathSpeedBonus = 1.25f;
 
     [SerializeField]
@@ -68,6 +71,9 @@ public class Octopus : MonoBehaviour
     [SerializeField]
     private float secondBreathRageDecreaseDelay = 1f;
 
+    [SerializeField]
+    private float secondBreathRageBonusByCoco = 0.75f;
+
     [Header("Second Souffle - Tension")]
 
     [SerializeField]
@@ -75,6 +81,12 @@ public class Octopus : MonoBehaviour
 
     [SerializeField]
     private float secondBreathTensionMax = 3f;
+
+    [SerializeField]
+    private float secondBreathTensionIncrease = 0.75f;
+
+    [SerializeField]
+    private float secondBreathTensionIncreaseDelay = 1f;
 
     [SerializeField]
     private float secondBreathTensionDecrease = 1f;
@@ -86,11 +98,19 @@ public class Octopus : MonoBehaviour
 
     #region Fields
 
+    private int horsePosition = 4;
+
     private float originalSpeed;
 
     private bool canBreathAgain = true;
 
+    private bool isCheckingSecondBreath = false;
+    private float currentSecondBreathCheckTimer = 0;
     private float currentRageTimer = 0;
+
+    private bool tensionDecrease = false;
+    private float currentTensionIncreaseTimer = 0;
+    private float currentTensionDecreaseTimer = 0;
 
     #endregion
 
@@ -107,6 +127,30 @@ public class Octopus : MonoBehaviour
         if (canRun)
         {
             transform.Translate(Vector3.right * octopusSpeed * Time.fixedDeltaTime);
+
+            currentSecondBreathCheckTimer += Time.fixedDeltaTime;
+
+            if (canBreathAgain && !isCheckingSecondBreath)
+            {
+                CheckIfBreathAgain();
+            }
+
+            currentRageTimer += Time.fixedDeltaTime;
+
+            CheckRageTimer();
+
+            CheckPosition();
+
+            if (tensionDecrease)
+            {
+                currentTensionDecreaseTimer += Time.fixedDeltaTime;
+                CheckTensionIncreaseTimer();
+            }
+            else
+            {
+                currentTensionIncreaseTimer += Time.fixedDeltaTime;
+                CheckTensionDecreaseTimer();
+            }
         }
     }
 
@@ -129,6 +173,25 @@ public class Octopus : MonoBehaviour
     }
 
     #endregion
+
+    private void CheckPosition()
+    {
+        if (horsePosition == 3 || horsePosition == 4)
+        {
+            tensionDecrease = false;
+        }
+        else
+        {
+            tensionDecrease = true;
+        }
+    }
+
+    public void SetPosition(int position)
+    {
+        horsePosition = position;
+
+        CheckPosition();
+    }
 
     public void HorseCanRun(bool nowRun)
     {
@@ -156,6 +219,9 @@ public class Octopus : MonoBehaviour
             HitByTrap(0.7f);
             Invoke("ResetSpeed", 1);
         }
+
+        ResetRageTimer();
+        secondBreathRage = Mathf.Clamp(secondBreathRage + secondBreathRageBonusByCoco, 0, secondBreathRageMax);
 
         isInvinsible = true;
         Invoke("ResetInvinsible", invinsibleFrame);
@@ -202,18 +268,95 @@ public class Octopus : MonoBehaviour
 
     #region Second Souffle
 
+    private void CheckIfBreathAgain()
+    {
+        if (currentSecondBreathCheckTimer >= secondBreathCheckDelay)
+        {
+            currentSecondBreathCheckTimer = 0;
+            SecondBreath();
+        }
+    }
+
     private void SecondBreath()
     {
-        //Besoin de mettre l'index de la position dans la course - 1 !
-        float secondBreathChance = secondBreathBaseChance + secondBreathPositionBonus[0] + secondBreathRage + secondBreathTension;
+        float secondBreathChance = secondBreathBaseChance + secondBreathPositionBonus[horsePosition - 1] + secondBreathRage + secondBreathTension;
 
         int rnd = Random.Range(0, 101);
 
         if (rnd <= secondBreathBaseChance)
         {
-            octopusSpeed *= secondBreathSpeedBonus;
+            ActiveSecondBreath();
         }
     }
+
+    private void ActiveSecondBreath()
+    {
+        canBreathAgain = false;
+
+        isInvinsible = true;
+
+        octopusSpeed *= secondBreathSpeedBonus;
+
+        Invoke("ResetSpeed", secondBreathDuration);
+        Invoke("ResetInvinsible", secondBreathDuration);
+    }
+
+    #region Rage
+
+    private void CheckRageTimer()
+    {
+        if(currentRageTimer >= secondBreathRageDecreaseDelay)
+        {
+            ResetRageTimer();
+
+            secondBreathRage = Mathf.Clamp(secondBreathRage - secondBreathRageDecrease, 0, secondBreathRageMax);
+        }
+    }
+
+    private void ResetRageTimer()
+    {
+        currentRageTimer = 0;
+    }
+
+    #endregion
+
+    #region Tension
+
+    private void CheckTensionIncreaseTimer()
+    {
+        ResetTensionDecreaseTimer();
+
+        if (currentTensionIncreaseTimer >= secondBreathTensionIncreaseDelay)
+        {
+            ResetTensionIncreaseTimer();
+
+            secondBreathTension = Mathf.Clamp(secondBreathTension + secondBreathTensionIncrease, 0, secondBreathTensionMax);
+        }
+    }
+
+    private void ResetTensionIncreaseTimer()
+    {
+        currentTensionDecreaseTimer = 0;
+    }
+
+    private void CheckTensionDecreaseTimer()
+    {
+        ResetTensionIncreaseTimer();
+
+        if (currentTensionDecreaseTimer >= secondBreathTensionDecreaseDelay)
+        {
+            ResetTensionDecreaseTimer();
+
+            secondBreathTension = Mathf.Clamp(secondBreathTension - secondBreathTensionDecrease, 0, secondBreathTensionMax);
+        }
+    }
+
+    private void ResetTensionDecreaseTimer()
+    {
+        currentTensionDecreaseTimer = 0;
+    }
+
+    #endregion
 
     #endregion
 }
