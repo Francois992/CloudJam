@@ -119,6 +119,8 @@ public class Octopus : MonoBehaviour
 
     private bool isSlowed = false;
 
+    private Animator animator;
+
     [HideInInspector] public BetManager.HorseAttribute attribute;
     #endregion
 
@@ -145,6 +147,8 @@ public class Octopus : MonoBehaviour
                 tenacityPercent = 0.5f;
                 break;
         }
+
+        animator = GetComponent<Animator>();
     }
 
     private void Update()
@@ -229,6 +233,7 @@ public class Octopus : MonoBehaviour
     public void HorseCanRun(bool nowRun)
     {
         canRun = nowRun;
+        animator.SetBool("canRun", true);
     }
 
     #region Hit By
@@ -244,6 +249,8 @@ public class Octopus : MonoBehaviour
         {
             octopusSpeed = 0;
             Invoke("ResetSpeed", cocoStun);
+            animator.SetBool("isStun", true);
+            Invoke("StopStunAnimation", cocoStun);
         }
         else
         {
@@ -282,6 +289,10 @@ public class Octopus : MonoBehaviour
         Invoke("ResetSpeed", 2);
     }
 
+    public void StopStunAnimation()
+    {
+        animator.SetBool("isStun", false);
+    }
     #endregion
 
     #region Reset
@@ -333,6 +344,14 @@ public class Octopus : MonoBehaviour
 
         Invoke("ResetSpeed", secondBreathDuration);
         Invoke("ResetInvinsible", secondBreathDuration);
+
+        animator.SetBool("secondBreath", true);
+        Invoke("StopSecondBreathAnimation", secondBreathDuration);
+    }
+
+    private void StopSecondBreathAnimation()
+    {
+        animator.SetBool("secondBreath", false);
     }
 
     #region Rage
