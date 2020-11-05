@@ -6,7 +6,9 @@ public class PlayerSelectMusicScript : MonoBehaviour
 {
     private PlayerSelectMusicScript _instance;
 
-    public int nbPlayers;
+    public MusicScript musicManager;
+
+    private int nbPlayers;
     public int musicVolume = 1;
     public AudioSource source0Player;
     public AudioSource source1Player;
@@ -14,7 +16,7 @@ public class PlayerSelectMusicScript : MonoBehaviour
     public AudioSource source3Player;
     public AudioSource source4Player;
 
-    void Awake()
+ /*   void Awake()
     {
         if (_instance == null)
         {
@@ -25,17 +27,19 @@ public class PlayerSelectMusicScript : MonoBehaviour
         {
             Destroy(gameObject);
         }
-    }
+    } */
 
     // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
-        
+     
     }
 
     // Update is called once per frame
     void FixedUpdate()
     {
+        nbPlayers = musicManager.nbplayers;
+
         switch (nbPlayers)
         {
             case 0:
