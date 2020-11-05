@@ -23,10 +23,12 @@ public class MusicScript : MonoBehaviour
 
     public AudioSource source;
     public AudioSource sourceSecondBreath;
+    public AudioSource sourceNormal;
 
     public AudioClip menuMusic;
     public AudioClip raceStartMusic;
-    public AudioClip raceMusic;
+    public AudioClip raceMusicBase;
+    public AudioClip raceMusicNormal;
     public AudioClip secondBreathLoop;
     public AudioClip victoryMusic;
     public AudioClip creditsMusic;
@@ -91,21 +93,27 @@ public class MusicScript : MonoBehaviour
         {
             if (!source.isPlaying && source.clip == raceStartMusic)
             {
-                source.clip = raceMusic;
+                source.clip = raceMusicBase;
                 source.loop = true;
                 source.Play();
 
                 sourceSecondBreath.clip = secondBreathLoop;
                 sourceSecondBreath.loop = true;
                 sourceSecondBreath.Play();
+
+                sourceNormal.clip = raceMusicNormal;
+                sourceNormal.loop = true;
+                sourceNormal.Play();
                 //isRacing = false;
             }
-            if (isSecondBreath && source.clip == raceMusic)
+            if (isSecondBreath && source.clip == raceMusicBase)
             {
+                sourceNormal.volume = 0;
                 sourceSecondBreath.volume = 1;
             }
             else
             {
+                sourceNormal.volume = 1;
                 sourceSecondBreath.volume = 0;
             }
         }
@@ -134,6 +142,7 @@ public class MusicScript : MonoBehaviour
     {
         source.Stop();
         sourceSecondBreath.Stop();
+        sourceNormal.Stop();
         PlayerSelectAudioManager.SetActive(false);
     }
 }
