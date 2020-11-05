@@ -60,7 +60,7 @@ MonoBehaviour:
   sourceNormal: {fileID: 5379657380572142443}
   menuMusic: {fileID: 8300000, guid: 7e0f529c241db412cbee65850e393310, type: 3}
   raceStartMusic: {fileID: 8300000, guid: 08f32580beddb459f915bc440427b9ee, type: 3}
-  raceMusic: {fileID: 8300000, guid: 200e32fa40d8b418a899d3ed21f9b65e, type: 3}
+  raceMusicBase: {fileID: 0}
   raceMusicNormal: {fileID: 8300000, guid: 555ae7accad364a6ea395895ee256e3f, type: 3}
   secondBreathLoop: {fileID: 8300000, guid: c2812cf79e531459d96e13d9c23b9cee, type: 3}
   victoryMusic: {fileID: 8300000, guid: 0ddb8f0b860034c54a8ae5ba5df563cb, type: 3}

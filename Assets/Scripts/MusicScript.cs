@@ -108,11 +108,13 @@ public class MusicScript : MonoBehaviour
             }
             if (isSecondBreath && source.clip == raceMusicBase)
             {
+                Debug.Log("Second Breath Music Starts");
                 sourceNormal.volume = 0;
                 sourceSecondBreath.volume = 1;
             }
             else
             {
+                Debug.Log("Second Breath Music Stops");
                 sourceNormal.volume = 1;
                 sourceSecondBreath.volume = 0;
             }
