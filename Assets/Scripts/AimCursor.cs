@@ -36,7 +36,7 @@ public class AimCursor : MonoBehaviour
 
     private void Start()
     {
-        SetPlayer(GameManager.instance.Players[0]);
+        SetPlayer(player);
     }
 
     private void FixedUpdate()
