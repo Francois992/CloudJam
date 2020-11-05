@@ -27,6 +27,11 @@ public class Octopus : MonoBehaviour
     private float invinsibleFrame = 0.75f;
 
     [SerializeField]
+    private float cocoStun = 0.25f;
+
+    [Header("Octohorse Bool")]
+
+    [SerializeField]
     private bool canRun = false;
 
     [SerializeField]
@@ -59,6 +64,24 @@ public class Octopus : MonoBehaviour
         }
     }
 
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        ThrowThing thing = collision.gameObject.GetComponent<ThrowThing>();
+
+        if (thing != null)
+        {
+            Destroy(collision.gameObject);
+            switch (thing.GetEThrowType())
+            {
+                case eThrowType.COCONUT:
+                    HitByCoconut();
+                    break;
+                default:
+                    break;
+            }
+        }
+    }
+
     #endregion
 
     public void HorseCanRun(bool nowRun)
@@ -78,17 +101,18 @@ public class Octopus : MonoBehaviour
         if (isAlreadyStun)
         {
             octopusSpeed = 0;
-            Invoke("ResetSpeed", 1);
-
-            isInvinsible = true;
+            Invoke("ResetSpeed", cocoStun);
         }
         else
         {
             isAlreadyStun = true;
 
             HitByTrap(0.7f);
-            Invoke("ResetSpeed", 2);
+            Invoke("ResetSpeed", 1);
         }
+
+        isInvinsible = true;
+        Invoke("ResetInvinsible", invinsibleFrame);
     }
 
     public void HitByTrap(float malusSpeed)
@@ -121,11 +145,6 @@ public class Octopus : MonoBehaviour
     {
         isAlreadyStun = false;
         octopusSpeed = originalSpeed;
-
-        if (isInvinsible)
-        {
-            Invoke("ResetInvinsible", invinsibleFrame);
-        }
     }
 
     private void ResetInvinsible()

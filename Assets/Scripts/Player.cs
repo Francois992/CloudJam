@@ -15,7 +15,7 @@ public class Player : MonoBehaviour
     [SerializeField] private float SelectFillSpeed = 2f;
 
     // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
         playerController = ReInput.players.GetPlayer(playerId);
     }
