@@ -1,0 +1,758 @@
+fileFormatVersion: 2
+guid: b0168be5fdf291341aae6c8ec001532c
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 8597810456802256649
+    second: OCTOHORSE1_Sheet_0
+  - first:
+      213: -7799556335416351443
+    second: OCTOHORSE1_Sheet_1
+  - first:
+      213: -7687685006280888431
+    second: OCTOHORSE1_Sheet_2
+  - first:
+      213: 3116967547601560026
+    second: OCTOHORSE1_Sheet_3
+  - first:
+      213: 5714231621619903098
+    second: OCTOHORSE1_Sheet_4
+  - first:
+      213: -8126641012755433915
+    second: OCTOHORSE1_Sheet_5
+  - first:
+      213: 4819448329443730944
+    second: OCTOHORSE1_Sheet_6
+  - first:
+      213: -8678035848715919078
+    second: OCTOHORSE1_Sheet_7
+  - first:
+      213: -7432572214895653388
+    second: OCTOHORSE1_Sheet_8
+  - first:
+      213: -6544990466266769267
+    second: OCTOHORSE1_Sheet_9
+  - first:
+      213: 1184796693180237641
+    second: OCTOHORSE1_Sheet_10
+  - first:
+      213: 3338791075663278001
+    second: OCTOHORSE1_Sheet_11
+  - first:
+      213: 3468503032379560579
+    second: OCTOHORSE1_Sheet_12
+  - first:
+      213: 2020206251599979295
+    second: OCTOHORSE1_Sheet_13
+  - first:
+      213: -203509329161281503
+    second: OCTOHORSE1_Sheet_14
+  - first:
+      213: -8864026924171091980
+    second: OCTOHORSE1_Sheet_15
+  - first:
+      213: 2753072219986734024
+    second: OCTOHORSE1_Sheet_16
+  - first:
+      213: -1153380454849693144
+    second: OCTOHORSE1_Sheet_17
+  - first:
+      213: -859142836202486803
+    second: OCTOHORSE1_Sheet_18
+  - first:
+      213: 2014304736920638947
+    second: OCTOHORSE1_Sheet_19
+  - first:
+      213: 8962283525326806341
+    second: OCTOHORSE1_Sheet_20
+  - first:
+      213: -3662732783009695015
+    second: OCTOHORSE1_Sheet_21
+  - first:
+      213: -878447049667915318
+    second: OCTOHORSE1_Sheet_22
+  - first:
+      213: -2577745220229253299
+    second: OCTOHORSE1_Sheet_23
+  - first:
+      213: 1761492931192317661
+    second: OCTOHORSE1_Sheet_24
+  - first:
+      213: 5833922589659024806
+    second: OCTOHORSE1_Sheet_25
+  - first:
+      213: -4824135416260611573
+    second: OCTOHORSE1_Sheet_26
+  - first:
+      213: -4431712753564300256
+    second: OCTOHORSE1_Sheet_27
+  - first:
+      213: -5108684664332390969
+    second: OCTOHORSE1_Sheet_28
+  - first:
+      213: 8784970506134005882
+    second: OCTOHORSE1_Sheet_29
+  - first:
+      213: 506357352250130168
+    second: OCTOHORSE1_Sheet_30
+  - first:
+      213: 6552224529021483642
+    second: OCTOHORSE1_Sheet_31
+  - first:
+      213: 5500325184564715937
+    second: OCTOHORSE1_Sheet_32
+  - first:
+      213: 41313981278430050
+    second: OCTOHORSE1_Sheet_33
+  - first:
+      213: -1838435868050726348
+    second: OCTOHORSE1_Sheet_0
+  - first:
+      213: 783098517542321284
+    second: OCTOHORSE1_Sheet_1
+  - first:
+      213: 2742555745909086563
+    second: OCTOHORSE1_Sheet_2
+  - first:
+      213: -2894446378412304169
+    second: OCTOHORSE1_Sheet_3
+  - first:
+      213: -2298726147383111219
+    second: OCTOHORSE1_Sheet_4
+  - first:
+      213: -1375370098121451652
+    second: OCTOHORSE1_Sheet_5
+  - first:
+      213: 908868612474418676
+    second: OCTOHORSE1_Sheet_6
+  - first:
+      213: -3016791960259303773
+    second: OCTOHORSE1_Sheet_7
+  - first:
+      213: -8851191347107847360
+    second: OCTOHORSE1_Sheet_8
+  - first:
+      213: 2316966995105250283
+    second: OCTOHORSE1_Sheet_9
+  - first:
+      213: 5746603403474759698
+    second: OCTOHORSE1_Sheet_10
+  - first:
+      213: 7659448687704757696
+    second: OCTOHORSE1_Sheet_11
+  - first:
+      213: 5960461278501271243
+    second: OCTOHORSE1_Sheet_12
+  - first:
+      213: 8066111390707010527
+    second: OCTOHORSE1_Sheet_13
+  - first:
+      213: 1764877547384195268
+    second: OCTOHORSE1_Sheet_14
+  - first:
+      213: -7348436542645136131
+    second: OCTOHORSE1_Sheet_15
+  - first:
+      213: 3796449993414441557
+    second: OCTOHORSE1_Sheet_16
+  - first:
+      213: 2652926781073999062
+    second: OCTOHORSE1_Sheet_17
+  - first:
+      213: 7472120635731376815
+    second: OCTOHORSE1_Sheet_18
+  - first:
+      213: 6498204181270457787
+    second: OCTOHORSE1_Sheet_19
+  - first:
+      213: 4469225256812324400
+    second: OCTOHORSE1_Sheet_20
+  - first:
+      213: -8074515669249019795
+    second: OCTOHORSE1_Sheet_21
+  - first:
+      213: 3469460031010667879
+    second: OCTOHORSE1_Sheet_22
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: OCTOHORSE1_Sheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 128
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90766dbae0f815770800000000000000
+      internalID: 8597810456802256649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OCTOHORSE1_Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 128
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d256cd536d862c390800000000000000
+      internalID: -7799556335416351443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OCTOHORSE1_Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 128
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19fe787c73bdf4590800000000000000
+      internalID: -7687685006280888431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OCTOHORSE1_Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 128
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad1263b5871b14b20800000000000000
+      internalID: 3116967547601560026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OCTOHORSE1_Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 128
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7a65f272670d4f40800000000000000
+      internalID: 5714231621619903098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OCTOHORSE1_Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 128
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54677914e0f583f80800000000000000
+      internalID: -8126641012755433915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OCTOHORSE1_Sheet_6
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 128
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 006e7d998be12e240800000000000000
+      internalID: 4819448329443730944
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OCTOHORSE1_Sheet_7
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 128
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a11ae21bf5c619780800000000000000
+      internalID: -8678035848715919078
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OCTOHORSE1_Sheet_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4fdc4b333f23ad890800000000000000
+      internalID: -7432572214895653388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OCTOHORSE1_Sheet_9
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d88d9d709d58b25a0800000000000000
+      internalID: -6544990466266769267
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OCTOHORSE1_Sheet_10
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 947c01ca05e317010800000000000000
+      internalID: 1184796693180237641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OCTOHORSE1_Sheet_11
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1bf672c2bc4c55e20800000000000000
+      internalID: 3338791075663278001
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OCTOHORSE1_Sheet_12
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 382595b8129922030800000000000000
+      internalID: 3468503032379560579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OCTOHORSE1_Sheet_13
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f13e3afd1e6390c10800000000000000
+      internalID: 2020206251599979295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OCTOHORSE1_Sheet_14
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1202dd6e75dfc2df0800000000000000
+      internalID: -203509329161281503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OCTOHORSE1_Sheet_15
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ff9841e976acf480800000000000000
+      internalID: -8864026924171091980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OCTOHORSE1_Sheet_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8cb2e410990e43620800000000000000
+      internalID: 2753072219986734024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OCTOHORSE1_Sheet_17
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82a3ec1569e5effe0800000000000000
+      internalID: -1153380454849693144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OCTOHORSE1_Sheet_18
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de344d47426b314f0800000000000000
+      internalID: -859142836202486803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OCTOHORSE1_Sheet_19
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e59a896c7f34fb10800000000000000
+      internalID: 2014304736920638947
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OCTOHORSE1_Sheet_20
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54d907fc16d606c70800000000000000
+      internalID: 8962283525326806341
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OCTOHORSE1_Sheet_21
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9da778990fb5b2dc0800000000000000
+      internalID: -3662732783009695015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: OCTOHORSE1_Sheet_22
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac1dd8200112fc3f0800000000000000
+      internalID: -878447049667915318
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
