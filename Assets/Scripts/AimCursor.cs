@@ -6,6 +6,8 @@ public class AimCursor : MonoBehaviour
 {
     #region Script Parameters
 
+    public SpriteRenderer sprite;
+
     [SerializeField]
     private Player player;
 
@@ -37,6 +39,24 @@ public class AimCursor : MonoBehaviour
     private void Start()
     {
         SetPlayer(player);
+
+        switch (player.playerId)
+            {
+            case 0:
+                sprite.color = Color.blue;
+                break;
+
+            case 1:
+                sprite.color = Color.green;
+                break;
+            case 2:
+                sprite.color = Color.red;
+                break;
+            case 3:
+                sprite.color = Color.yellow;
+                break;
+
+        }
     }
 
     private void FixedUpdate()

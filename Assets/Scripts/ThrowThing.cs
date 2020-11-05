@@ -5,6 +5,8 @@ using UnityEngine;
 [RequireComponent(typeof(BoxCollider2D))]
 public class ThrowThing : MonoBehaviour
 {
+    public float speed;
+
     #region Script Parameters
 
     [SerializeField]
@@ -16,6 +18,12 @@ public class ThrowThing : MonoBehaviour
     {
         return throwType;
     }
+
+    void FixedUpdate()
+    {
+        transform.Translate(Vector3.right * speed * Time.fixedDeltaTime);
+    }
+
 }
 
 public enum eThrowType
