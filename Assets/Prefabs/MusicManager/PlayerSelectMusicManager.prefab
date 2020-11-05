@@ -48,7 +48,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d66c524ffdcf7455dbdf50c865fe57e2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nbPlayers: 0
+  musicManager: {fileID: 0}
   musicVolume: 1
   source0Player: {fileID: 5480220129211685034}
   source1Player: {fileID: 5480220129211685035}
