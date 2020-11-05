@@ -1091,6 +1091,7 @@ MonoBehaviour:
   Player2Result: {fileID: 594454906}
   Player3Result: {fileID: 416525405}
   Player4Result: {fileID: 838965549}
+  defaultSelectedButton: {fileID: 995553148}
 --- !u!114 &755879480
 MonoBehaviour:
   m_ObjectHideFlags: 0
