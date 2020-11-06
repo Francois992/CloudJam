@@ -40,12 +40,16 @@ public class AimCursor : MonoBehaviour
     {
         SetPlayer(player);
 
+        SetColor();
+    }
+
+    private void SetColor()
+    {
         switch (player.playerId)
-            {
+        {
             case 0:
                 sprite.color = Color.blue;
                 break;
-
             case 1:
                 sprite.color = Color.green;
                 break;
@@ -55,7 +59,6 @@ public class AimCursor : MonoBehaviour
             case 3:
                 sprite.color = Color.yellow;
                 break;
-
         }
     }
 
@@ -88,6 +91,8 @@ public class AimCursor : MonoBehaviour
     {
         player = playerToSet;
         playerController = player.playerController;
+
+        SetColor();
     }
 
     #region Throw things
