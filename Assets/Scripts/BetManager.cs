@@ -127,10 +127,10 @@ public class BetManager : MonoBehaviour
         Horse3Speed.fillAmount = (GameManager.instance.OctoHorses[2].octopusSpeed / 5f);
         Horse4Speed.fillAmount = (GameManager.instance.OctoHorses[3].octopusSpeed / 5f);
         
-        Horse1Hp.fillAmount = (GameManager.instance.OctoHorses[0].tenacity / 5f);
-        Horse2Hp.fillAmount = (GameManager.instance.OctoHorses[1].tenacity / 5f);
-        Horse3Hp.fillAmount = (GameManager.instance.OctoHorses[2].tenacity / 5f);
-        Horse4Hp.fillAmount = (GameManager.instance.OctoHorses[3].tenacity / 5f);
+        Horse1Hp.fillAmount = (GameManager.instance.OctoHorses[0].tenacity / 3f);
+        Horse2Hp.fillAmount = (GameManager.instance.OctoHorses[1].tenacity / 3f);
+        Horse3Hp.fillAmount = (GameManager.instance.OctoHorses[2].tenacity / 3f);
+        Horse4Hp.fillAmount = (GameManager.instance.OctoHorses[3].tenacity / 3f);
 
         Horse1Panache.fillAmount = (GameManager.instance.OctoHorses[0].panache / 5f);
         Horse2Panache.fillAmount = (GameManager.instance.OctoHorses[1].panache / 5f);
