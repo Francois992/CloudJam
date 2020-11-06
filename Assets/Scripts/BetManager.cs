@@ -92,9 +92,14 @@ public class BetManager : MonoBehaviour
 
     private List<Image> playerImages = new List<Image>();
 
+    public GameObject StartButton;
+    public Image StartButtonLoad;
+
     // Start is called before the first frame update
     void Start()
     {
+        StartButton.SetActive(false);
+
         List<HorseAttribute> attributesCopy = attributes;
 
         horse1Attribute = attributes[(int)(attributesCopy.Count * UnityEngine.Random.value)];

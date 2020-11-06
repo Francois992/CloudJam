@@ -64,6 +64,7 @@ public class GameManager : MonoBehaviour
     }
 
     private bool isRacing = false;
+    [HideInInspector] public bool canStartRace = false;
     public bool IsRacing { get { return isRacing; } }
     private bool CountDown = false;
 
@@ -121,6 +122,8 @@ public class GameManager : MonoBehaviour
                 if (playersBetting[i].bets > 0)
                 {
                     musicManager.nbplayers = i;
+                    BetManager.instance.StartButton.SetActive(true);
+                    canStartRace = true;
                     return;
                 }
                 
