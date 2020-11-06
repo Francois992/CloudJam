@@ -130,6 +130,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   octopusSpeed: 3
+  topSpeed: 5
   tenacity: 3
   panache: 3
   octopusMaxSpeed: 5
@@ -139,6 +140,32 @@ MonoBehaviour:
   canRun: 0
   isInvinsible: 0
   isAlreadyStun: 0
+  secondBreathCheckDelay: 2
+  secondBreathSpeedBonus: 2
+  secondBreathDuration: 5
+  secondBreathBaseChance: 1
+  secondBreathPositionBonus:
+  - 0
+  - 3
+  - 5
+  - 8
+  secondBreathRage: 0
+  secondBreathRageMax: 3
+  secondBreathRageDecrease: 0.5
+  secondBreathRageDecreaseDelay: 1
+  secondBreathRageBonusByCoco: 0.75
+  secondBreathTension: 0
+  secondBreathTensionMax: 3
+  secondBreathTensionIncrease: 0.75
+  secondBreathTensionIncreaseDelay: 1
+  secondBreathTensionDecrease: 1
+  secondBreathTensionDecreaseDelay: 1
+  canBreathAgain: 1
+  attribute:
+    name: 
+    anecdote: 
+    uselessStat: 
+    uselessStatValue: 0
 --- !u!61 &4355130986974197468
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -225,7 +252,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -6765801049870501832, guid: 6667f0d96533361429be74f7aaf5cfbf,
+  m_Sprite: {fileID: -8940038040672757737, guid: 4c24de9ef2fedd040b3c56d391af94d0,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 1

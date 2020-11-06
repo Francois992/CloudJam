@@ -43,7 +43,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 87a445fdda6cf4f4e9a51573d3eb5bb4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  musicManager: {fileID: 0}
   playerNumber: 4
+  gameCamera: {fileID: 0}
   player1Bets: 
   player2Bets: 
   player3Bets: 
@@ -51,6 +53,17 @@ MonoBehaviour:
   Players:
   - {fileID: 0}
   - {fileID: 0}
-  OctoHorses: []
-  isBetting: 1
-  isRacing: 1
+  - {fileID: 0}
+  - {fileID: 0}
+  playersBetting: []
+  OctoHorses:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  OctoHorsesSorted: []
+  HorseWinner: {fileID: 0}
+  betsAvailable: 1
+  gameLengthInSec: 10
+  countDownText: {fileID: 0}
+  countDownCanvas: {fileID: 0}
