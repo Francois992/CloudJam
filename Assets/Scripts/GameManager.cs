@@ -170,6 +170,7 @@ public class GameManager : MonoBehaviour
             {
                 CountDown = false;
                 countDownCanvas.gameObject.SetActive(false);
+                Hud.instance.gameObject.SetActive(true);
                 StartRace();
             }
             
@@ -207,14 +208,15 @@ public class GameManager : MonoBehaviour
     {
         yield return new WaitForSeconds(2);
         gameCamera.cameraCanMove = false;
+        OctoHorsesSorted = OctoHorses;
+        OctoHorsesSorted.Sort((s1, s2) => s2.transform.position.x.CompareTo(s1.transform.position.x));
         yield return new WaitForSeconds(2);
         for (int i = 0; i < OctoHorses.Count; i++)
         {
             OctoHorses[i].HorseCanRun(false);
         }
-        OctoHorsesSorted = OctoHorses;
-        OctoHorsesSorted.Sort((s1, s2) => s2.transform.position.x.CompareTo(s1.transform.position.x));
-
+        
+        Hud.instance.gameObject.SetActive(false);
         musicManager.isVictorious = true;
 
         for (int j = 0; j < playersBetting.Count; j++)
