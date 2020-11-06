@@ -22,10 +22,13 @@ public class ResultManager : MonoBehaviour
 
     [SerializeField] private Image HorseWinner = null;
     [SerializeField] private Text HorseWinnerName = null;
-    [SerializeField] private Text Player1Result = null;
-    [SerializeField] private Text Player2Result = null;
-    [SerializeField] private Text Player3Result = null;
-    [SerializeField] private Text Player4Result = null;
+    [SerializeField] private Image Player1Result = null;
+    [SerializeField] private Image Player2Result = null;
+    [SerializeField] private Image Player3Result = null;
+    [SerializeField] private Image Player4Result = null;
+
+    [SerializeField] private Sprite WinImage = null;
+    [SerializeField] private Sprite LooseImage = null;
 
     [SerializeField] private GameObject defaultSelectedButton = null;
 
@@ -51,35 +54,35 @@ public class ResultManager : MonoBehaviour
 
         if (GameManager.instance.Players[0].hasWon)
         {
-            Player1Result.text += " Win";
+            Player1Result.sprite = WinImage;
         }
         else
         {
-            Player1Result.text += " Lose";
+            Player1Result.sprite = LooseImage;
         }
         if (GameManager.instance.Players[1].hasWon)
         {
-            Player2Result.text += " Win";
+            Player2Result.sprite = WinImage;
         }
         else
         {
-            Player2Result.text += " Lose";
+            Player2Result.sprite = LooseImage;
         }
         if (GameManager.instance.Players[2].hasWon)
         {
-            Player3Result.text += " Win";
+            Player3Result.sprite = WinImage;
         }
         else
         {
-            Player3Result.text += " Lose";
+            Player3Result.sprite = LooseImage;
         }
         if (GameManager.instance.Players[3].hasWon)
         {
-            Player4Result.text += " Win";
+            Player4Result.sprite = WinImage;
         }
         else
         {
-            Player4Result.text += " Lose";
+            Player4Result.sprite = LooseImage;
         }
     }
 
