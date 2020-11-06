@@ -134,12 +134,14 @@ MonoBehaviour:
   tenacity: 3
   panache: 3
   octopusMaxSpeed: 5
-  octopusMinSpeed: 2
+  octopusMinSpeed: 4
   invinsibleFrame: 0.75
-  cocoStun: 0.25
+  cocoStun: 0.5
   canRun: 0
   isInvinsible: 0
   isAlreadyStun: 0
+  isStun: 0
+  timeBetweenFirstCoconutAndSecond: 1
   secondBreathCheckDelay: 2
   secondBreathSpeedBonus: 2
   secondBreathDuration: 5

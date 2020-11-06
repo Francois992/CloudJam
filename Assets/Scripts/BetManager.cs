@@ -96,6 +96,8 @@ public class BetManager : MonoBehaviour
     public GameObject StartButton;
     public Image StartButtonLoad;
 
+    public PlayerSelectMusicScript musicManager;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -166,6 +168,8 @@ public class BetManager : MonoBehaviour
 
     public void SelectHorse(int playerId, int horseId, int betsLeft)
     {
+        musicManager.nbPlayers++;
+        Debug.Log("Nombre de joueurs:" + musicManager.nbPlayers);
         GameManager.instance.PlayerBets[playerId].Add(horseId);
         Debug.Log("player " + (playerId +1)  + " has chosen horse number " + horseId);
         if (betsLeft == 0) playerImages[playerId].sprite = checkImage;

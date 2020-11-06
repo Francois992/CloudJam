@@ -115,17 +115,12 @@ public class GameManager : MonoBehaviour
     {
         if (isBetting)
         {
-            //musicManager.isPlayerSelect = true;
-
             for (int i = 0; i < playersBetting.Count; i++)
             {
                 if (playersBetting[i].bets > 0)
                 {
-                    musicManager.nbplayers = i;
-                    
                     return;
-                }
-                
+                }                
             }
             BetManager.instance.StartButton.SetActive(true);
             canStartRace = true;
