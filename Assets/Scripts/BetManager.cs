@@ -160,7 +160,7 @@ public class BetManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (StartButtonLoad.fillAmount >= 1) GameManager.instance.StartGame();
     }
 
     public void SelectHorse(int playerId, int horseId, int betsLeft)
