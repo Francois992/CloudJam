@@ -26,7 +26,7 @@ public class Hud : MonoBehaviour
 
     [HideInInspector] public List<Image> cocoFills = new List<Image>();
 
-    private float CocoCooldown = 1f;
+    [SerializeField] private float CocoCooldown = 1f;
 
     // Start is called before the first frame update
     void Start()
