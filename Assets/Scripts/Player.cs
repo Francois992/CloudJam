@@ -67,7 +67,16 @@ public class Player : MonoBehaviour
             {
                 SelectFill.fillAmount -= SelectFillSpeed * Time.deltaTime;
             }
+
             
+            
+        }
+        else if(bets <= 0 && GameManager.instance.canStartRace)
+        {
+            if (playerController.GetButton("Start"))
+            {
+                BetManager.instance.StartButtonLoad.fillAmount += SelectFillSpeed * Time.deltaTime;
+            }
         }
         
     }
