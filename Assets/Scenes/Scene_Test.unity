@@ -19240,6 +19240,13 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: -12.000122
       objectReference: {fileID: 0}
+    - target: {fileID: 8434443864536744874, guid: c97a7f6043196db42aad01560ad72ba3,
+        type: 3}
+      propertyPath: m_Text
+      value: 'Everyone bet on a horse !
+
+        (don''t tell which one)'
+      objectReference: {fileID: 0}
     - target: {fileID: 8608978515690383148, guid: c97a7f6043196db42aad01560ad72ba3,
         type: 3}
       propertyPath: m_AnchorMin.y
@@ -61273,6 +61280,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: PlayerNumCanvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 2412759529982272451, guid: e0346c5fbe0c91a42ba08daa7d9d9639,
+        type: 3}
+      propertyPath: m_Text
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 2412759530142690988, guid: e0346c5fbe0c91a42ba08daa7d9d9639,
         type: 3}
