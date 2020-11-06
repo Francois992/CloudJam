@@ -20,7 +20,7 @@ public class BetManager : MonoBehaviour
     }
 
     [Serializable]
-    private struct HorseAttribute
+    public struct HorseAttribute
     {
         public string name;
         [TextArea] public string anecdote;
@@ -98,12 +98,16 @@ public class BetManager : MonoBehaviour
         List<HorseAttribute> attributesCopy = attributes;
 
         horse1Attribute = attributes[(int)(attributesCopy.Count * UnityEngine.Random.value)];
+        GameManager.instance.OctoHorses[0].attribute = horse1Attribute;
         attributesCopy.Remove(horse1Attribute);
         horse2Attribute = attributes[(int)(attributesCopy.Count * UnityEngine.Random.value)];
+        GameManager.instance.OctoHorses[1].attribute = horse2Attribute;
         attributesCopy.Remove(horse2Attribute);
         horse3Attribute = attributes[(int)(attributesCopy.Count * UnityEngine.Random.value)];
+        GameManager.instance.OctoHorses[2].attribute = horse3Attribute;
         attributesCopy.Remove(horse3Attribute);
         horse4Attribute = attributes[(int)(attributesCopy.Count * UnityEngine.Random.value)];
+        GameManager.instance.OctoHorses[3].attribute = horse4Attribute;
 
         playerImages.Add(player1Image);
         playerImages.Add(player2Image);

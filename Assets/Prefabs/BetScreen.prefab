@@ -213,7 +213,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: 604bebd10ab8f4666883e2fa2c3530be, type: 3}
     m_FontSize: 25
     m_FontStyle: 0
     m_BestFit: 0
@@ -254,7 +254,6 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 523982561}
-  - {fileID: 1923131032}
   - {fileID: 603825173}
   - {fileID: 585919306}
   - {fileID: 1511533196}
@@ -270,8 +269,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 480, y: 0}
-  m_SizeDelta: {x: 500, y: 250}
+  m_AnchoredPosition: {x: 900.1, y: 0}
+  m_SizeDelta: {x: 1340.2625, y: 250}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &523982560
 GameObject:
@@ -285,7 +284,7 @@ GameObject:
   - component: {fileID: 523982563}
   - component: {fileID: 523982562}
   m_Layer: 5
-  m_Name: Image
+  m_Name: BackGroundStats
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -305,10 +304,10 @@ RectTransform:
   m_Father: {fileID: 238931480}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 500, y: 250}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: -0.000061035156, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &523982563
 CanvasRenderer:
@@ -331,14 +330,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.03773582, g: 0.03773582, b: 0.03773582, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 9003568775964187166, guid: dbf40f0f5661843769b36fbe8cad2557,
+    type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 0
   m_FillMethod: 4
@@ -377,11 +377,11 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 238931480}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 120, y: 15}
+  m_AnchoredPosition: {x: -213, y: -28}
   m_SizeDelta: {x: 200, y: 10}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &585919308
@@ -451,11 +451,11 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 238931480}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 120, y: 50}
+  m_AnchoredPosition: {x: -212.99995, y: 16}
   m_SizeDelta: {x: 200, y: 10}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &603825175
@@ -525,11 +525,11 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 238931480}
-  m_RootOrder: 10
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 120, y: -20}
+  m_AnchoredPosition: {x: 290, y: 16}
   m_SizeDelta: {x: 200, y: 10}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &761105096
@@ -599,12 +599,12 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 238931480}
-  m_RootOrder: 9
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -115}
-  m_SizeDelta: {x: 480, y: 75}
+  m_AnchoredPosition: {x: 37.8, y: -75.5}
+  m_SizeDelta: {x: 1223.4594, y: 40.013657}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &805994150
 CanvasRenderer:
@@ -634,7 +634,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: 604bebd10ab8f4666883e2fa2c3530be, type: 3}
     m_FontSize: 20
     m_FontStyle: 0
     m_BestFit: 0
@@ -677,11 +677,11 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 238931480}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -115, y: 15}
+  m_AnchoredPosition: {x: -449.99997, y: -28.000004}
   m_SizeDelta: {x: 250, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &814418536
@@ -712,7 +712,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: 604bebd10ab8f4666883e2fa2c3530be, type: 3}
     m_FontSize: 25
     m_FontStyle: 0
     m_BestFit: 0
@@ -829,11 +829,11 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 238931480}
-  m_RootOrder: 7
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -115, y: -55}
+  m_AnchoredPosition: {x: 56, y: -30.493}
   m_SizeDelta: {x: 250, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1233581985
@@ -864,7 +864,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: 604bebd10ab8f4666883e2fa2c3530be, type: 3}
     m_FontSize: 25
     m_FontStyle: 0
     m_BestFit: 0
@@ -907,11 +907,11 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 238931480}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -115, y: 50}
+  m_AnchoredPosition: {x: -450, y: 16.000013}
   m_SizeDelta: {x: 250, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1269903839
@@ -942,7 +942,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: 604bebd10ab8f4666883e2fa2c3530be, type: 3}
     m_FontSize: 25
     m_FontStyle: 0
     m_BestFit: 0
@@ -985,11 +985,11 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 238931480}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 120, y: -55}
+  m_AnchoredPosition: {x: 290, y: -28}
   m_SizeDelta: {x: 200, y: 10}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1511533198
@@ -1094,7 +1094,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: 604bebd10ab8f4666883e2fa2c3530be, type: 3}
     m_FontSize: 25
     m_FontStyle: 0
     m_BestFit: 0
@@ -1211,11 +1211,11 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 238931480}
-  m_RootOrder: 8
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 90}
+  m_AnchoredPosition: {x: -335, y: 88}
   m_SizeDelta: {x: 480, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1716716171
@@ -1246,7 +1246,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: 604bebd10ab8f4666883e2fa2c3530be, type: 3}
     m_FontSize: 30
     m_FontStyle: 0
     m_BestFit: 0
@@ -1324,7 +1324,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: 604bebd10ab8f4666883e2fa2c3530be, type: 3}
     m_FontSize: 25
     m_FontStyle: 0
     m_BestFit: 0
@@ -1485,80 +1485,6 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!1 &1923131031
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1923131032}
-  - component: {fileID: 1923131034}
-  - component: {fileID: 1923131033}
-  m_Layer: 5
-  m_Name: Image (3)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &1923131032
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1923131031}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 238931480}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 500, y: 250}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!222 &1923131034
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1923131031}
-  m_CullTransparentMesh: 0
---- !u!114 &1923131033
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1923131031}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 0.8207547, g: 0.8207547, b: 0.8207547, a: 1}
-  m_RaycastTarget: 1
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
 --- !u!1 &2119408689
 GameObject:
   m_ObjectHideFlags: 0
@@ -1663,11 +1589,11 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 238931480}
-  m_RootOrder: 11
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -115, y: -20}
+  m_AnchoredPosition: {x: 56, y: 16}
   m_SizeDelta: {x: 250, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &2135786049
@@ -1698,7 +1624,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: 604bebd10ab8f4666883e2fa2c3530be, type: 3}
     m_FontSize: 25
     m_FontStyle: 0
     m_BestFit: 0
@@ -1776,7 +1702,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: 604bebd10ab8f4666883e2fa2c3530be, type: 3}
     m_FontSize: 20
     m_FontStyle: 0
     m_BestFit: 0
@@ -1928,7 +1854,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: 604bebd10ab8f4666883e2fa2c3530be, type: 3}
     m_FontSize: 25
     m_FontStyle: 0
     m_BestFit: 0
@@ -2154,7 +2080,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: 604bebd10ab8f4666883e2fa2c3530be, type: 3}
     m_FontSize: 25
     m_FontStyle: 0
     m_BestFit: 0
@@ -2232,7 +2158,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: 604bebd10ab8f4666883e2fa2c3530be, type: 3}
     m_FontSize: 20
     m_FontStyle: 0
     m_BestFit: 0
@@ -2458,7 +2384,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: 604bebd10ab8f4666883e2fa2c3530be, type: 3}
     m_FontSize: 25
     m_FontStyle: 0
     m_BestFit: 0
@@ -2536,7 +2462,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: 604bebd10ab8f4666883e2fa2c3530be, type: 3}
     m_FontSize: 30
     m_FontStyle: 0
     m_BestFit: 0
@@ -2688,7 +2614,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: 604bebd10ab8f4666883e2fa2c3530be, type: 3}
     m_FontSize: 25
     m_FontStyle: 0
     m_BestFit: 0
@@ -2840,7 +2766,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: 604bebd10ab8f4666883e2fa2c3530be, type: 3}
     m_FontSize: 25
     m_FontStyle: 0
     m_BestFit: 0
@@ -2918,7 +2844,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: 604bebd10ab8f4666883e2fa2c3530be, type: 3}
     m_FontSize: 25
     m_FontStyle: 0
     m_BestFit: 0
@@ -2996,7 +2922,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: 604bebd10ab8f4666883e2fa2c3530be, type: 3}
     m_FontSize: 20
     m_FontStyle: 0
     m_BestFit: 0
@@ -3834,7 +3760,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: 604bebd10ab8f4666883e2fa2c3530be, type: 3}
     m_FontSize: 30
     m_FontStyle: 0
     m_BestFit: 0
@@ -3912,7 +3838,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: 604bebd10ab8f4666883e2fa2c3530be, type: 3}
     m_FontSize: 25
     m_FontStyle: 0
     m_BestFit: 0
@@ -3990,7 +3916,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: 604bebd10ab8f4666883e2fa2c3530be, type: 3}
     m_FontSize: 30
     m_FontStyle: 0
     m_BestFit: 0
@@ -4774,7 +4700,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: 604bebd10ab8f4666883e2fa2c3530be, type: 3}
     m_FontSize: 30
     m_FontStyle: 0
     m_BestFit: 0
@@ -5083,7 +5009,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: 604bebd10ab8f4666883e2fa2c3530be, type: 3}
     m_FontSize: 30
     m_FontStyle: 0
     m_BestFit: 0
@@ -5302,7 +5228,7 @@ Canvas:
   m_RenderMode: 0
   m_Camera: {fileID: 0}
   m_PlaneDistance: 100
-  m_PixelPerfect: 0
+  m_PixelPerfect: 1
   m_ReceivesEvents: 1
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
@@ -5378,6 +5304,276 @@ MonoBehaviour:
   - name: 'Fanfreluche '
     anecdote: 'Fabulous '
     uselessStat: Amazingness
+    uselessStatValue: 10
+  - name: Jolly Jumper
+    anecdote: Some say he's faster than his own shadow.
+    uselessStat: Head Hunting
+    uselessStatValue: 7
+  - name: Spirit
+    anecdote: Here I Am, I will always return.
+    uselessStat: Liberty
+    uselessStatValue: 9
+  - name: Grispoil
+    anecdote: The last of the Mearas.
+    uselessStat: Gandalf
+    uselessStatValue: 10
+  - name: Petit Tonnerre
+    anecdote: Yakari Yakari!
+    uselessStat: Hinduism
+    uselessStatValue: 5
+  - name: Potoooooooo
+    anecdote: Oooohhh, was it supposed to be written as "Pot-8-o's"??
+    uselessStat: Administration
+    uselessStatValue: 1
+  - name: Flying Fox
+    anecdote: Contrary to popular belief, he actually doesn't fly.
+    uselessStat: Altitude
+    uselessStatValue: 0
+  - name: Horse on Wells
+    anecdote: I hope he doesn't fall into it.
+    uselessStat: Rosebud
+    uselessStatValue: 8
+  - name: Bill the Poney
+    anecdote: The last of the Poney
+    uselessStat: Frodon
+    uselessStatValue: 10
+  - name: "John Caf\xE9"
+    anecdote: "Got banned from OctoBucks\u2122 for being too wild."
+    uselessStat: 'Party Skills '
+    uselessStatValue: 6
+  - name: Clyde Van Dusen
+    anecdote: Son of Man O' War, a mere pony of a horse with a weedy frame!
+    uselessStat: Germanism
+    uselessStatValue: 1
+  - name: Reyes
+    anecdote: All about kindness and harmony, an always happy bundle of joy!
+    uselessStat: Fraternity
+    uselessStatValue: 10
+  - name: El Jibity
+    anecdote: Stands for all types of horses!
+    uselessStat: Equality
+    uselessStatValue: 7
+  - name: Horsekage
+    anecdote: Used to run with two of his legs up behind him
+    uselessStat: Sick Ninja Skills
+    uselessStatValue: 9
+  - name: Sweety Candy Pie
+    anecdote: Has been spotted fighting the elephants at the zoo. Poor things didn't
+      stand a chance.
+    uselessStat: Mercy
+    uselessStatValue: 0
+  - name: Pantheon
+    anecdote: 'Picked up baking as a hobby. Not great at it though. '
+    uselessStat: Cooking
+    uselessStatValue: 3
+  - name: iHorse X
+    anecdote: I'm pretty sure this one is a robot.
+    uselessStat: Battery
+    uselessStatValue: 6
+  - name: Zavatta
+    anecdote: Was once a clown in a roaming circus. Still keeps the red nose as a
+      memento.
+    uselessStat: Juggling
+    uselessStatValue: 6
+  - name: "Piqu\xE9 des Hannetons"
+    anecdote: Is not.
+    uselessStat: Yes
+    uselessStatValue: 0
+  - name: Horsedini
+    anecdote: 'Got out of prison, like, yesterday, dude. Probably broke out too. '
+    uselessStat: Lockpicking
+    uselessStatValue: 7
+  - name: Flying Fox
+    anecdote: Contrary to popular belief, he actually doesn't fly.
+    uselessStat: Altitude
+    uselessStatValue: 0
+  - name: Columbhorse
+    anecdote: My grandma's favorite! His last name is apparently Lieutenant, which
+      is kinda weird.
+    uselessStat: Smarts
+    uselessStatValue: 10
+  - name: "Se\xF1or Caball\xF3n de la Torre"
+    anecdote: "\"...Creo que tom\xE9 el avi\xF3n equivocado...\""
+    uselessStat: English
+    uselessStatValue: 0
+  - name: Jhin
+    anecdote: FOUR
+    uselessStat: FOUR
+    uselessStatValue: 4
+  - name: "Fontaine Poulain de Saint P\xE8re"
+    anecdote: Blockchained by a void queen insect.
+    uselessStat: RekSaied
+    uselessStatValue: 8
+  - name: "YR \xC6 E-38"
+    anecdote: My mistake...That was my old password.
+    uselessStat: Password Security
+    uselessStatValue: 10
+  - name: Artax
+    anecdote: Falkor
+    uselessStat: Atreyu
+    uselessStatValue: 7
+  - name: Dahut
+    anecdote: 'Doesn''t put a feet on the ground.
+
+'
+    uselessStat: Cryptozoology
+    uselessStatValue: 3
+  - name: Just a plain old horse
+    anecdote: A regular horse, I mean, nothing weird or special about this one, like
+      you know how many descriptions we have to come up with?
+    uselessStat: Horseracing
+    uselessStatValue: 5
+  - name: Definitely not a Horse
+    anecdote: I don't see what you're talking about.
+    uselessStat: Horsing
+    uselessStatValue: 6
+  - name: The Imposthorse
+    anecdote: '"I was at weapons, I couldn''t vent"'
+    uselessStat: EMM (Emergency Meetings per Minute)
+    uselessStatValue: 5
+  - name: Horsososoe the Rappoppo
+    anecdote: Big time star on the radio in the 90s, yoooooo
+    uselessStat: Sick Flow
+    uselessStatValue: 8
+  - name: Rapidrush
+    anecdote: This one has a burning passion.Can actually talk but only says it's
+      own name.
+    uselessStat: Flamethrowing
+    uselessStatValue: 7
+  - name: Jorshando Jospeedy
+    anecdote: Pretends it has a a sort of spirit following it around.
+    uselessStat: Continuing
+    uselessStatValue: 6
+  - name: Klikiclak the Horde of Crabs
+    anecdote: Who allowed a bunch of crabs in a horse costume to join?!
+    uselessStat: Fencing
+    uselessStatValue: 9
+  - name: Eponey
+    anecdote: A horse with the destiny of a legend!
+    uselessStat: Time Travel
+    uselessStatValue: 7
+  - name: Sh** Horse
+    anecdote: They were mean to me during registration, they don't get to have a
+      real name. I'm not petty.
+    uselessStat: Rudeness
+    uselessStatValue: 10
+  - name: '[REDACTED]'
+    anecdote: '[REDACTED]'
+    uselessStat: Breaching
+    uselessStatValue: 4
+  - name: Draculheeh
+    anecdote: '"What is a horse?! A miserable pile of secrets!"'
+    uselessStat: Glass Throwing
+    uselessStatValue: 6
+  - name: Dev Horse and Dev Squid
+    anecdote: Got a feeling this one's gonna cheat.
+    uselessStat: Referencing
+    uselessStatValue: 6
+  - name: 'Octhullu Jr. '
+    anecdote: Nephew of a bigwig in the baddy business. Not nearly as scary as their
+      uncle.
+    uselessStat: Scariness
+    uselessStatValue: 1
+  - name: "The Worst\u2122"
+    anecdote: Yeah, don't bet on this one, he's reaaaaally bad.
+    uselessStat: Breathing
+    uselessStatValue: 2
+  - name: Milk
+    anecdote: This is a subtle nod to the fact that I mixed up the horse registration
+      form and my shopping list.
+    uselessStat: Attention
+    uselessStatValue: 2
+  - name: Trivia Horse
+    anecdote: Did you know? Each horse is given a fresh paint job at the start of
+      each course, meaning they can look different every game!
+    uselessStat: Knowledge
+    uselessStatValue: 10
+  - name: Gran Centaurio
+    anecdote: Justice lies in the holy cane...But does it really?
+    uselessStat: Uniting
+    uselessStatValue: 8
+  - name: Trojan Horse MK.II
+    anecdote: Totally not a virus. And totally not full of greek people out for our
+      blood either.
+    uselessStat: Deception
+    uselessStatValue: 6
+  - name: Moonlight Shooter
+    anecdote: Got a reallllly big mouth and googly eyes, but you can't see it because
+      of the low res.
+    uselessStat: Firing lazers
+    uselessStatValue: 8
+  - name: Shershook Holse
+    anecdote: 'Rival of Columbhorse, but a bit more physical-oriented. Somehow revived? '
+    uselessStat: Baritsu
+    uselessStatValue: 9
+  - name: Falling Horse
+    anecdote: Fell into the rabbit hole of gambling on horse-racing. Enrolled to
+      repay their debt.
+    uselessStat: Hex-a-gone
+    uselessStatValue: 2
+  - name: Horselace Elfead
+    anecdote: Her name comes from a swordswoman who helps people in need. She's invincible...or
+      is she?
+    uselessStat: Bracing
+    uselessStatValue: 8
+  - name: .... --- .-. ... .
+    anecdote: .-- .- ... / .--. .-. --- -... .- -... .-.. -.-- / .- / ... .- .. .-..
+      --- .-.
+    uselessStat: -- --- .-. ... .
+    uselessStatValue: 10
+  - name: "Runner n\xB042"
+    anecdote: Has the answer to everything. Maybe it even is the answer.
+    uselessStat: Hitchhiking
+    uselessStatValue: 4
+  - name: Captain Quickhorse
+    anecdote: Known for his insanely powerful "Quickhorse Punch".
+    uselessStat: Punching
+    uselessStatValue: 10
+  - name: Donkenix Wrong
+    anecdote: '"_Hey, that''s an interesting ladder. _It''s a stepladder. _We''re
+      not doing that again."'
+    uselessStat: Presenting Badge
+    uselessStatValue: 7
+  - name: Panzer Gundhorse
+    anecdote: 'Come on, this one totally is a robot, you can''t fool me twice! '
+    uselessStat: Aknowledgement
+    uselessStatValue: 4
+  - name: '[Insert name here]'
+    anecdote: '[Insert funny trivia or obscure reference here]'
+    uselessStat: '[Insert Useless Stat]'
+    uselessStatValue: 5
+  - name: WcHorsenald
+    anecdote: Is sponsored by a big fast-food chain. Kind of insane.
+    uselessStat: Laughing
+    uselessStatValue: 4
+  - name: Rihannhorse
+    anecdote: We got so used to writing "horse" in the registration forms that we
+      invited the wrong person.
+    uselessStat: Singing
+    uselessStatValue: 2
+  - name: A llama in disguise
+    anecdote: '"Blistering barnacles, I know!... when llama angry, he always do that!"'
+    uselessStat: Spitting
+    uselessStatValue: 9
+  - name: Poneirgheist
+    anecdote: Has had a run-in with ghost hunters over a misunderstanding regarding
+      their name.
+    uselessStat: Haunting
+    uselessStatValue: 1
+  - name: Prince Hectopus of Nisselia
+    anecdote: Wants to donate money to people online, but people always think it's
+      a scam.
+    uselessStat: Convincing
+    uselessStatValue: 3
+  - name: Mortimer Deponeyan
+    anecdote: Have a weird tendency to run at exactly 88 MpH. Horses are really fast
+      in this world.
+    uselessStat: Paradoxing
+    uselessStatValue: 6
+  - name: Holo-Poney
+    anecdote: Is actually a really accurate hologram, so accurate it gets slowed
+      from hard terrain too.
+    uselessStat: Opacity
     uselessStatValue: 10
   checkImage: {fileID: 21300000, guid: 41c9498436d0b6940a67f6661880fdf2, type: 3}
   crossImage: {fileID: 21300000, guid: 5e67ce9b1b6b34b4489bb4d8469d0507, type: 3}
@@ -5478,7 +5674,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: 604bebd10ab8f4666883e2fa2c3530be, type: 3}
     m_FontSize: 30
     m_FontStyle: 0
     m_BestFit: 0
@@ -5864,7 +6060,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: 604bebd10ab8f4666883e2fa2c3530be, type: 3}
     m_FontSize: 30
     m_FontStyle: 0
     m_BestFit: 0
@@ -5942,7 +6138,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: 604bebd10ab8f4666883e2fa2c3530be, type: 3}
     m_FontSize: 25
     m_FontStyle: 0
     m_BestFit: 0
@@ -6020,7 +6216,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: 604bebd10ab8f4666883e2fa2c3530be, type: 3}
     m_FontSize: 25
     m_FontStyle: 0
     m_BestFit: 0

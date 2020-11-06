@@ -6,10 +6,10 @@ public class CameraMovement : MonoBehaviour
 {
     #region Script Parameters
 
-    [Header("Octohorse Carac")]
+    [Header("Camera Carac")]
 
     [SerializeField]
-    private float cameraSpeed = 3.5f;
+    public float cameraSpeed = 3.5f;
 
     [SerializeField]
     public bool cameraCanMove = false;

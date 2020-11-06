@@ -6,6 +6,8 @@ public class AimCursor : MonoBehaviour
 {
     #region Script Parameters
 
+    public SpriteRenderer sprite;
+
     [SerializeField]
     private Player player;
 
@@ -37,6 +39,27 @@ public class AimCursor : MonoBehaviour
     private void Start()
     {
         SetPlayer(player);
+
+        SetColor();
+    }
+
+    private void SetColor()
+    {
+        switch (player.playerId)
+        {
+            case 0:
+                sprite.color = Color.blue;
+                break;
+            case 1:
+                sprite.color = Color.green;
+                break;
+            case 2:
+                sprite.color = Color.red;
+                break;
+            case 3:
+                sprite.color = Color.yellow;
+                break;
+        }
     }
 
     private void FixedUpdate()
@@ -46,9 +69,19 @@ public class AimCursor : MonoBehaviour
 
         transform.Translate(new Vector2(xPos, yPos) * aimSpeed * Time.fixedDeltaTime);
 
-        if (playerController.GetButton("AButton") && canThrowCoconut)
+        if (GameManager.instance.IsRacing)
         {
-            ThrowCoconut();
+            if (playerController.GetButton("AButton") && canThrowCoconut)
+            {
+                ThrowCoconut();
+            }
+
+            if (playerController.GetButton("BButton"))
+            {
+                Debug.LogError("B !!!");
+                GameManager.instance.OctoHorses[0].canBreathAgain = true;
+                GameManager.instance.OctoHorses[0].ActiveSecondBreath();
+            }
         }
     }
 
@@ -58,6 +91,8 @@ public class AimCursor : MonoBehaviour
     {
         player = playerToSet;
         playerController = player.playerController;
+
+        SetColor();
     }
 
     #region Throw things

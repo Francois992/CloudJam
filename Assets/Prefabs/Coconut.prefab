@@ -42,10 +42,10 @@ BoxCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5418002365799766902}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -73,6 +73,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5df7d51a552418d4294df95004f8e800, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  speed: 3.5
   throwType: 0
 --- !u!212 &7842286532457721414
 SpriteRenderer:
@@ -112,7 +113,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 3
   m_Sprite: {fileID: 2323417281532039976, guid: 26100cf595cf21a49b5352ccc3e1d411,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
