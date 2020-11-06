@@ -84,12 +84,12 @@ public class AimCursor : MonoBehaviour
                 Hud.instance.cocoFills[player.playerId].fillAmount = 0;
             }
 
-            if (playerController.GetButton("BButton"))
-            {
-                Debug.LogError("B !!!");
-                GameManager.instance.OctoHorses[0].canBreathAgain = true;
-                GameManager.instance.OctoHorses[0].ActiveSecondBreath();
-            }
+            //if (playerController.GetButton("BButton"))
+            //{
+            //    Debug.LogError("B !!!");
+            //    GameManager.instance.OctoHorses[0].canBreathAgain = true;
+            //    GameManager.instance.OctoHorses[0].ActiveSecondBreath();
+            //}
         }
     }
 
