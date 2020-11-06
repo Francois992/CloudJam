@@ -2931,6 +2931,164 @@ MonoBehaviour:
       from hard terrain too.
     uselessStat: Opacity
     uselessStatValue: 10
+  - name: Binded Poney
+    anecdote: Spent a lot of time running around in a basement collecting trinkets
+      and eating random pills.
+    uselessStat: Crying
+    uselessStatValue: 8
+  - name: Philososteed
+    anecdote: '"There is technically no proof that the world really exists, maybe
+      it''s just an hallucination or creation of my brain."'
+    uselessStat: Traumatazing
+    uselessStatValue: 9
+  - name: Nice Horse
+    anecdote: This horse was number 69 in the code. I'm not apologizing.
+    uselessStat: Creativity
+    uselessStatValue: 2
+  - name: Octolich
+    anecdote: An undead sorcerer octopus riding a resurrected horse. I'm not making
+      that up!
+    uselessStat: Resurrecting
+    uselessStatValue: 6
+  - name: Dirkey
+    anecdote: Recently escaped from the terrible lair of a Dragon. Has died numerous
+      times, but had continues.
+    uselessStat: Raging
+    uselessStatValue: 8
+  - name: Spirit Horse
+    anecdote: Got lost in a place called Lawland and ended up here. Horse-racing
+      is another type of one way track, I suppose.
+    uselessStat: Train Handling
+    uselessStatValue: 7
+  - name: Arcanic Poney
+    anecdote: Found their way out of a really tough maze. Never realizes the gravity
+      of the situation.
+    uselessStat: Puzzle-Solving
+    uselessStatValue: 4
+  - name: Brawhllasquid
+    anecdote: Lives in a pentagon-shaped house. Has 3 really cute siblings as well.
+    uselessStat: Bouncing
+    uselessStatValue: 8
+  - name: 'Crowned Markethorse '
+    anecdote: Lives in a country where shops are opened, like, 2 minutes a day. 2
+      really frantic minutes.
+    uselessStat: Pushing
+    uselessStatValue: 7
+  - name: Apprentisquid
+    anecdote: 'An apprentice in magic, usually works as a pair. '
+    uselessStat: Infusing
+    uselessStatValue: 8
+  - name: Submersible Octhorse
+    anecdote: This pair has been scavenging the bottoms of the seas with their submarine!
+      What do you mean, an octopus doesn't need it?
+    uselessStat: Refueling
+    uselessStatValue: 4
+  - name: Pirating Horsemate
+    anecdote: A scourer of the 8 seas! Their ship is undergoing a continuous mutiny
+      though.
+    uselessStat: Cannonning
+    uselessStatValue: 3
+  - name: Exstallion and Extopus
+    anecdote: Has found a staff of exploding and has since been singing it around
+      once a day. Their chants don't actually mean anything.
+    uselessStat: Bombarding
+    uselessStatValue: 8
+  - name: Dr.Horse
+    anecdote: Can be kind of an ass, but is actually pretty good at their job. Usually
+      walks with cane.
+    uselessStat: Doctoring
+    uselessStatValue: 7
+  - name: Jack Stallion
+    anecdote: Never heard of a worse octopirate, but I've heard of him!
+    uselessStat: Bickering
+    uselessStatValue: 6
+  - name: Mary Chapsteed
+    anecdote: Not very talkative, but somehow really funny! Has played in many old
+      black-and-white movies.
+    uselessStat: Coloring
+    uselessStatValue: 1
+  - name: Pinnofoal
+    anecdote: A wooden toy turned into a real foal by a fairy. Can't lie.
+    uselessStat: Dancing
+    uselessStatValue: 3
+  - name: Trot Mustang
+    anecdote: Probably a pyromaniac. Transmutes their problems into bigger problems.
+    uselessStat: Roasting
+    uselessStatValue: 10
+  - name: Galloparbarian
+    anecdote: Has a tendency to get into wild fits or rage. When in doubt, they "axe"
+      people a question.
+    uselessStat: Teamwork
+    uselessStatValue: 2
+  - name: Mountmarty
+    anecdote: 'Deadly rival of Shershook Holse. They''ve been fighting for decades
+      now, for Rhiannon''s sake! '
+    uselessStat: 'Manipulating '
+    uselessStatValue: 8
+  - name: Equinosette
+    anecdote: Has had a lot of problems over the years. You could say her situtation
+      is pretty miserable.
+    uselessStat: Culture
+    uselessStatValue: 5
+  - name: Steedspeare
+    anecdote: '"To neigh or not to neigh, that is the question." '
+    uselessStat: Theatrics
+    uselessStatValue: 7
+  - name: Bronco Trotasso
+    anecdote: 'Asides from horse-racing, are an adept of abstract painting. '
+    uselessStat: Painting
+    uselessStatValue: 8
+  - name: King Crabthur
+    anecdote: Wielder of Excrablibur, king of britain! Or was it a queen?
+    uselessStat: Confusion
+    uselessStatValue: 7
+  - name: Krakky Jr.
+    anecdote: Son of a giant octopus but didn't inherit their gigantism. Tries to
+      get out of their father's shadow.
+    uselessStat: Size
+    uselessStatValue: 2
+  - name: Neigh Automequine
+    anecdote: Maybe this one isn't a robot, I'm not so sure anymore, it's so lifelike!
+    uselessStat: Existentialism
+    uselessStatValue: 10
+  - name: The Foal Prince
+    anecdote: It says it has came from the B 612 asteroid. Really likes sheep, and
+      has a fox friend.
+    uselessStat: Friendliness
+    uselessStatValue: 9
+  - name: 'Artifilly '
+    anecdote: Throws confetti around as often as possible. Has pissed off many a
+      janitor.
+    uselessStat: Cleaning
+    uselessStatValue: 1
+  - name: Isocahedrallion
+    anecdote: Has rolled poorly on their last check. And the one before that.
+    uselessStat: Luck
+    uselessStatValue: 2
+  - name: Leghorse
+    anecdote: '"Who said Duplhorse?! Put them on trial! For heresy!"'
+    uselessStat: Construction
+    uselessStatValue: 7
+  - name: Chilly Gaitlan
+    anecdote: Goes at their own pace, they don't like to canter. Don't get them started
+      on gallop.
+    uselessStat: Puns
+    uselessStatValue: 1
+  - name: Octocopter
+    anecdote: Rumors say they can spin really fast and start flying. I wanna see
+      that!
+    uselessStat: Spinning
+    uselessStatValue: 8
+  - name: Doug Squidhorse
+    anecdote: Escaped a laboratory facility recently after an AI takeover. Keeps
+      a cube with a heart shaped sticker on it at all times.
+    uselessStat: Valving
+    uselessStatValue: 7
+  - name: Holo-Poney
+    anecdote: Is actually a really accurate hologram, so accurate it gets slowed
+      from hard terrain too.
+    uselessStat: Opacity
+    uselessStatValue: 10
   checkImage: {fileID: 21300000, guid: 41c9498436d0b6940a67f6661880fdf2, type: 3}
   crossImage: {fileID: 21300000, guid: 5e67ce9b1b6b34b4489bb4d8469d0507, type: 3}
   player1Image: {fileID: 1152321458}
@@ -3346,9 +3504,9 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3401f666280aa494288ea187fd2a29dd, type: 3}
---- !u!114 &2735924998582463699 stripped
+--- !u!114 &2735924998023387641 stripped
 MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 4116094166594977664, guid: 3401f666280aa494288ea187fd2a29dd,
+  m_CorrespondingSourceObject: {fileID: 4116094166128560810, guid: 3401f666280aa494288ea187fd2a29dd,
     type: 3}
   m_PrefabInstance: {fileID: 2083117809112257363}
   m_PrefabAsset: {fileID: 0}
@@ -3361,18 +3519,6 @@ MonoBehaviour:
 --- !u!114 &2735924997880484092 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 4116094167898784687, guid: 3401f666280aa494288ea187fd2a29dd,
-    type: 3}
-  m_PrefabInstance: {fileID: 2083117809112257363}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &2735924998023387641 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 4116094166128560810, guid: 3401f666280aa494288ea187fd2a29dd,
     type: 3}
   m_PrefabInstance: {fileID: 2083117809112257363}
   m_PrefabAsset: {fileID: 0}
@@ -3428,6 +3574,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &2735924998582463699 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4116094166594977664, guid: 3401f666280aa494288ea187fd2a29dd,
+    type: 3}
+  m_PrefabInstance: {fileID: 2083117809112257363}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!224 &5948913241923702995 stripped
@@ -3585,27 +3743,9 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3401f666280aa494288ea187fd2a29dd, type: 3}
---- !u!224 &8608978516294745738 stripped
-RectTransform:
-  m_CorrespondingSourceObject: {fileID: 5649327643273184128, guid: 3401f666280aa494288ea187fd2a29dd,
-    type: 3}
-  m_PrefabInstance: {fileID: 4116094167092854026}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1716716170 stripped
+--- !u!114 &1511533197 stripped
 MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 4116094166594977664, guid: 3401f666280aa494288ea187fd2a29dd,
-    type: 3}
-  m_PrefabInstance: {fileID: 4116094167092854026}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &603825174 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 4116094167575025948, guid: 3401f666280aa494288ea187fd2a29dd,
+  m_CorrespondingSourceObject: {fileID: 4116094166389774215, guid: 3401f666280aa494288ea187fd2a29dd,
     type: 3}
   m_PrefabInstance: {fileID: 4116094167092854026}
   m_PrefabAsset: {fileID: 0}
@@ -3627,9 +3767,39 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1716716170 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4116094166594977664, guid: 3401f666280aa494288ea187fd2a29dd,
+    type: 3}
+  m_PrefabInstance: {fileID: 4116094167092854026}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!224 &8608978516294745738 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 5649327643273184128, guid: 3401f666280aa494288ea187fd2a29dd,
+    type: 3}
+  m_PrefabInstance: {fileID: 4116094167092854026}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &761105095 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 4116094167820400589, guid: 3401f666280aa494288ea187fd2a29dd,
+    type: 3}
+  m_PrefabInstance: {fileID: 4116094167092854026}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &603825174 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4116094167575025948, guid: 3401f666280aa494288ea187fd2a29dd,
     type: 3}
   m_PrefabInstance: {fileID: 4116094167092854026}
   m_PrefabAsset: {fileID: 0}
@@ -3661,18 +3831,6 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &1511533197 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 4116094166389774215, guid: 3401f666280aa494288ea187fd2a29dd,
-    type: 3}
-  m_PrefabInstance: {fileID: 4116094167092854026}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1001 &6342778671677163963
@@ -3824,9 +3982,21 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3401f666280aa494288ea187fd2a29dd, type: 3}
---- !u!114 &6996727188431060598 stripped
+--- !u!114 &6996727187542816315 stripped
 MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 4116094167820400589, guid: 3401f666280aa494288ea187fd2a29dd,
+  m_CorrespondingSourceObject: {fileID: 4116094166594977664, guid: 3401f666280aa494288ea187fd2a29dd,
+    type: 3}
+  m_PrefabInstance: {fileID: 6342778671677163963}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &6996727188659638439 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4116094167575025948, guid: 3401f666280aa494288ea187fd2a29dd,
     type: 3}
   m_PrefabInstance: {fileID: 6342778671677163963}
   m_PrefabAsset: {fileID: 0}
@@ -3872,6 +4042,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &6996727188431060598 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4116094167820400589, guid: 3401f666280aa494288ea187fd2a29dd,
+    type: 3}
+  m_PrefabInstance: {fileID: 6342778671677163963}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &6996727188677582842 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 4116094167590639169, guid: 3401f666280aa494288ea187fd2a29dd,
@@ -3882,30 +4064,6 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &6996727188659638439 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 4116094167575025948, guid: 3401f666280aa494288ea187fd2a29dd,
-    type: 3}
-  m_PrefabInstance: {fileID: 6342778671677163963}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &6996727187542816315 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 4116094166594977664, guid: 3401f666280aa494288ea187fd2a29dd,
-    type: 3}
-  m_PrefabInstance: {fileID: 6342778671677163963}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!224 &1612396520930937403 stripped
@@ -4058,39 +4216,9 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3401f666280aa494288ea187fd2a29dd, type: 3}
---- !u!114 &5187040223455023798 stripped
+--- !u!114 &5187040221906628561 stripped
 MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 4116094166128560810, guid: 3401f666280aa494288ea187fd2a29dd,
-    type: 3}
-  m_PrefabInstance: {fileID: 9143253166766528540}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!224 &3496250990754159516 stripped
-RectTransform:
-  m_CorrespondingSourceObject: {fileID: 5649327643273184128, guid: 3401f666280aa494288ea187fd2a29dd,
-    type: 3}
-  m_PrefabInstance: {fileID: 9143253166766528540}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &5187040223097710492 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 4116094166594977664, guid: 3401f666280aa494288ea187fd2a29dd,
-    type: 3}
-  m_PrefabInstance: {fileID: 9143253166766528540}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &5187040221946462464 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 4116094167575025948, guid: 3401f666280aa494288ea187fd2a29dd,
+  m_CorrespondingSourceObject: {fileID: 4116094167820400589, guid: 3401f666280aa494288ea187fd2a29dd,
     type: 3}
   m_PrefabInstance: {fileID: 9143253166766528540}
   m_PrefabAsset: {fileID: 0}
@@ -4112,9 +4240,51 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &5187040221906628561 stripped
+--- !u!114 &5187040221946462464 stripped
 MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 4116094167820400589, guid: 3401f666280aa494288ea187fd2a29dd,
+  m_CorrespondingSourceObject: {fileID: 4116094167575025948, guid: 3401f666280aa494288ea187fd2a29dd,
+    type: 3}
+  m_PrefabInstance: {fileID: 9143253166766528540}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &5187040223097710492 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4116094166594977664, guid: 3401f666280aa494288ea187fd2a29dd,
+    type: 3}
+  m_PrefabInstance: {fileID: 9143253166766528540}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &5187040223455023798 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4116094166128560810, guid: 3401f666280aa494288ea187fd2a29dd,
+    type: 3}
+  m_PrefabInstance: {fileID: 9143253166766528540}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!224 &3496250990754159516 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 5649327643273184128, guid: 3401f666280aa494288ea187fd2a29dd,
+    type: 3}
+  m_PrefabInstance: {fileID: 9143253166766528540}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &5187040223697948571 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4116094166389774215, guid: 3401f666280aa494288ea187fd2a29dd,
     type: 3}
   m_PrefabInstance: {fileID: 9143253166766528540}
   m_PrefabAsset: {fileID: 0}
@@ -4134,17 +4304,5 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &5187040223697948571 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 4116094166389774215, guid: 3401f666280aa494288ea187fd2a29dd,
-    type: 3}
-  m_PrefabInstance: {fileID: 9143253166766528540}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
