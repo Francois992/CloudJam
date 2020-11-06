@@ -127,11 +127,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sprite: {fileID: 5011371963969729784}
+  p1Color: {r: 0.13725491, g: 0.50980395, b: 1, a: 1}
+  p2Color: {r: 0.16470589, g: 0.9803922, b: 0.04705883, a: 1}
+  p3Color: {r: 1, g: 0.9176471, b: 0.121568635, a: 1}
+  p4Color: {r: 1, g: 0.098039225, b: 0.098039225, a: 1}
   player: {fileID: 0}
-  aimSpeed: 7.5
+  aimSpeed: 10
   coconutThing: {fileID: 5418002365799766902, guid: 6d3b1fbd945529d4d8322b0e7d4baf4b,
     type: 3}
-  coconutCD: 1
+  coconutCD: 0.2
 --- !u!212 &5011371963969729784
 SpriteRenderer:
   m_ObjectHideFlags: 0

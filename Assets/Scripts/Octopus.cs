@@ -56,6 +56,10 @@ public class Octopus : MonoBehaviour
 
     [SerializeField]
     private float secondBreathDuration = 1f;
+    [SerializeField]
+    private float secondBreathDurationMax = 0.5f;
+    [SerializeField]
+    private float secondBreathDurationMin = 2f;
 
     [SerializeField]
     private float secondBreathBaseChance = 1f;
@@ -135,6 +139,7 @@ public class Octopus : MonoBehaviour
 
     private void Awake()
     {
+        secondBreathDuration = Random.Range(secondBreathDurationMin, secondBreathDurationMax);
         panache = secondBreathDuration;
         topSpeed = Random.Range(1, 11);
         tenacity = Random.Range(0, 3);

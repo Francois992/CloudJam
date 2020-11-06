@@ -19,7 +19,7 @@ public class MusicScript : MonoBehaviour
 
     public bool isCredits;
 
-    public int nbplayers;
+    //public int nbplayers;
 
     public GameObject PlayerSelectAudioManager;
 
