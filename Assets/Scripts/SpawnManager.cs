@@ -9,6 +9,7 @@ public class SpawnManager : MonoBehaviour
 
     public GameObject slowTrap;
     public GameObject obstacle;
+    public GameObject endRace;
     [SerializeField, Range(0, 100)] private float chanceForObstacleToSpawn = 50f;
     public float timeBetweenObstacles = 3f;
 
@@ -18,8 +19,12 @@ public class SpawnManager : MonoBehaviour
 
     private Transform spawnObstable;
 
+    private GameManager gm;
+
     private void Start()
     {
+        gm = GameManager.instance;
+
         spawnObstable = Camera.main.transform.GetChild(1).transform;
 
         foreach (Transform transform in horseSpawnLocation)
@@ -29,10 +34,16 @@ public class SpawnManager : MonoBehaviour
             ySpawnLocation.Add(transform.position.y);
             timers.Add(Random.Range(0f, timeBetweenObstacles));
         }
+
+        Vector2 endRaceLocation = new Vector2(gm.gameLengthInSec * Camera.main.gameObject.GetComponent<CameraMovement>().cameraSpeed, 0f);
+        GameObject toSpawn = Instantiate(endRace);
+        toSpawn.transform.position = endRaceLocation;
     }
 
     private void Update()
     {
+        if (!gm.IsRacing) return;
+
         for (int i = 0; i < timers.Count; ++i)
         {
             timers[i] += Time.deltaTime;

@@ -96,6 +96,7 @@ MonoBehaviour:
     type: 3}
   obstacle: {fileID: 4949528963822683091, guid: 2a761dca96b8c0048a9ebf1abaa02cf7,
     type: 3}
+  endRace: {fileID: 4599834827425340940, guid: d7ed2abb8d191eb4790aa8dd8e808868, type: 3}
   chanceForObstacleToSpawn: 50
   timeBetweenObstacles: 3
 --- !u!1 &4689655914716825644

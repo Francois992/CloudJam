@@ -129,6 +129,7 @@ public class Octopus : MonoBehaviour
 
     private void Awake()
     {
+        panache = secondBreathDuration;
         topSpeed = Random.Range(1, 11);
         tenacity = Random.Range(0, 3);
 
@@ -298,13 +299,11 @@ public class Octopus : MonoBehaviour
         }
 
         isSlowed = true;
-        //octopusSpeed *= (1 - Mathf.Clamp(0f, 100f, tenacityPercent * malusSpeed / 100));
+        //octopusSpeed *= (1 - Mathf.Clamp(0f, 1f, tenacityPercent * malusSpeed / 100));
 
+        if (malusSpeed > 1) malusSpeed /= 100;
         float malusPercent = (1 - malusSpeed);
-
-
         float malusTenacity = 1 - (malusPercent * tenacityPercent);
-
         octopusSpeed = Mathf.Clamp(octopusSpeed * malusTenacity, octopusMinSpeed, octopusMaxSpeed);
     }
 

@@ -129,7 +129,8 @@ MonoBehaviour:
   sprite: {fileID: 5011371963969729784}
   player: {fileID: 0}
   aimSpeed: 7.5
-  coconutThing: {fileID: 0}
+  coconutThing: {fileID: 5418002365799766902, guid: 6d3b1fbd945529d4d8322b0e7d4baf4b,
+    type: 3}
   coconutCD: 1
 --- !u!212 &5011371963969729784
 SpriteRenderer:
