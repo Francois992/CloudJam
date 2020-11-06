@@ -146,8 +146,8 @@ MonoBehaviour:
   secondBreathCheckDelay: 2
   secondBreathSpeedBonus: 2
   secondBreathDuration: 5
-  secondBreathDurationMax: 0.5
-  secondBreathDurationMin: 2
+  secondBreathDurationMax: 2.5
+  secondBreathDurationMin: 5
   secondBreathBaseChance: 1
   secondBreathPositionBonus:
   - 0

@@ -32,6 +32,8 @@ public class ResultManager : MonoBehaviour
 
     [SerializeField] private GameObject defaultSelectedButton = null;
 
+    private bool isHorseWinnerNameSet = false;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -49,8 +51,13 @@ public class ResultManager : MonoBehaviour
         EventSystem.current.SetSelectedGameObject(null);
         EventSystem.current.SetSelectedGameObject(defaultSelectedButton);
 
-        HorseWinner.sprite = GameManager.instance.OctoHorses[0].GetComponent<SpriteRenderer>().sprite;
-        HorseWinnerName.text += " "+GameManager.instance.OctoHorses[0].attribute.name;
+        if(!isHorseWinnerNameSet)
+        {
+            isHorseWinnerNameSet = true;
+
+            HorseWinner.sprite = GameManager.instance.OctoHorses[0].GetComponent<SpriteRenderer>().sprite;
+            HorseWinnerName.text += " " + GameManager.instance.OctoHorses[0].attribute.name;
+        }
 
         if (GameManager.instance.Players[0].hasWon)
         {
