@@ -132,10 +132,10 @@ MonoBehaviour:
   p3Color: {r: 1, g: 0.9176471, b: 0.121568635, a: 1}
   p4Color: {r: 1, g: 0.098039225, b: 0.098039225, a: 1}
   player: {fileID: 0}
-  aimSpeed: 7.5
+  aimSpeed: 10
   coconutThing: {fileID: 5418002365799766902, guid: 6d3b1fbd945529d4d8322b0e7d4baf4b,
     type: 3}
-  coconutCD: 1
+  coconutCD: 0.2
 --- !u!212 &5011371963969729784
 SpriteRenderer:
   m_ObjectHideFlags: 0
