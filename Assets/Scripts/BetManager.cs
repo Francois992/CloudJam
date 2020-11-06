@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class BetManager : MonoBehaviour
@@ -168,6 +169,11 @@ public class BetManager : MonoBehaviour
         GameManager.instance.PlayerBets[playerId].Add(horseId);
         Debug.Log("player " + (playerId +1)  + " has chosen horse number " + horseId);
         if (betsLeft == 0) playerImages[playerId].sprite = checkImage;
+    }
+
+    public void ReturnToMenu()
+    {
+        SceneManager.LoadScene("UI_Scene");
     }
    
 }

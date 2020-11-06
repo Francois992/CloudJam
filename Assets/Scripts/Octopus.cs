@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Runtime.InteropServices.WindowsRuntime;
 using UnityEngine;
 
 public class Octopus : MonoBehaviour
@@ -41,6 +42,9 @@ public class Octopus : MonoBehaviour
 
     [SerializeField]
     private bool isAlreadyStun = false;
+
+    [SerializeField] private bool isStun = false;
+    [SerializeField] private float timeBetweenFirstCoconutAndSecond = 1f;
 
     [Header("Second Souffle")]
 
@@ -95,6 +99,8 @@ public class Octopus : MonoBehaviour
 
     [SerializeField]
     private float secondBreathTensionDecreaseDelay = 1f;
+
+   
 
     #endregion
 
@@ -159,7 +165,7 @@ public class Octopus : MonoBehaviour
 
     private void Update()
     {
-        if (isSlowed || inSecondBreath) return;
+        if (isSlowed || inSecondBreath || isStun || isAlreadyStun) return;
 
         timer += Time.deltaTime;
         octopusSpeed = Mathf.Lerp(originalSpeed - ecartTopSpeed, originalSpeed + ecartTopSpeed, Mathf.Cos(timer));
@@ -272,23 +278,24 @@ public class Octopus : MonoBehaviour
         if (isAlreadyStun)
         {
             octopusSpeed = 0;
-            Invoke("ResetSpeed", cocoStun);
+            isStun = true;
             animator.SetBool("isStun", true);
             Invoke("StopStunAnimation", cocoStun);
+            Invoke("ResetSpeed", cocoStun);
         }
         else
         {
             isAlreadyStun = true;
 
             HitByTrap(0.7f);
-            Invoke("ResetSpeed", 1);
+            Invoke("ResetSpeed", timeBetweenFirstCoconutAndSecond);
         }
 
         ResetRageTimer();
         secondBreathRage = Mathf.Clamp(secondBreathRage + secondBreathRageBonusByCoco, 0, secondBreathRageMax);
 
-        isInvinsible = true;
-        Invoke("ResetInvinsible", invinsibleFrame);
+        //isInvinsible = true;
+        //Invoke("ResetInvinsible", invinsibleFrame);
     }
 
     public void HitByTrap(float malusSpeed)
@@ -322,6 +329,7 @@ public class Octopus : MonoBehaviour
     public void StopStunAnimation()
     {
         animator.SetBool("isStun", false);
+        isStun = false;
     }
     #endregion
 
@@ -329,9 +337,11 @@ public class Octopus : MonoBehaviour
 
     public void ResetSpeed()
     {
+        if (isStun) return;
+
         isAlreadyStun = false;
         octopusSpeed = originalSpeed;
-        isSlowed = false;
+        isSlowed = false;   
     }
 
     private void ResetInvinsible()
