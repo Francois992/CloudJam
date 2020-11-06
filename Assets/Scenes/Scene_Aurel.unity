@@ -212,6 +212,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 4355130986974197471, guid: fff9231102bdf854c9be939f6adfd245,
+        type: 3}
+      propertyPath: tenacity
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fff9231102bdf854c9be939f6adfd245, type: 3}
 --- !u!1 &80589421
@@ -709,6 +714,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 4355130986974197471, guid: fff9231102bdf854c9be939f6adfd245,
+        type: 3}
+      propertyPath: tenacity
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fff9231102bdf854c9be939f6adfd245, type: 3}
 --- !u!114 &1173856708 stripped
@@ -848,6 +858,12 @@ PrefabInstance:
       propertyPath: horseSpawnLocation.Array.data[1]
       value: 
       objectReference: {fileID: 364114340}
+    - target: {fileID: 4689655914630543728, guid: 3463ac1f5729f9440959f529fdcc077a,
+        type: 3}
+      propertyPath: obstacle
+      value: 
+      objectReference: {fileID: 8727630566199594578, guid: fff7ccda1c5c53846aae501ba1ad4f27,
+        type: 3}
     - target: {fileID: 4689655914630543730, guid: 3463ac1f5729f9440959f529fdcc077a,
         type: 3}
       propertyPath: m_Name
@@ -856,7 +872,7 @@ PrefabInstance:
     - target: {fileID: 4689655914630543730, guid: 3463ac1f5729f9440959f529fdcc077a,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4689655914630543731, guid: 3463ac1f5729f9440959f529fdcc077a,
         type: 3}
@@ -1026,6 +1042,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.y
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 4355130986974197471, guid: fff9231102bdf854c9be939f6adfd245,
+        type: 3}
+      propertyPath: tenacity
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fff9231102bdf854c9be939f6adfd245, type: 3}
 --- !u!1 &1610592396 stripped
@@ -1174,7 +1195,7 @@ PrefabInstance:
     - target: {fileID: 6033320460224703896, guid: 94087bc8b368f9849b180d9625d01381,
         type: 3}
       propertyPath: gameLengthInSec
-      value: 10
+      value: 90
       objectReference: {fileID: 0}
     - target: {fileID: 6033320460224703896, guid: 94087bc8b368f9849b180d9625d01381,
         type: 3}
@@ -2120,6 +2141,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.y
       value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4355130986974197471, guid: fff9231102bdf854c9be939f6adfd245,
+        type: 3}
+      propertyPath: tenacity
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fff9231102bdf854c9be939f6adfd245, type: 3}
