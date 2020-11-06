@@ -93,6 +93,6 @@ public class ResultManager : MonoBehaviour
     
     public void MainMenu()
     {
-        SceneManager.LoadScene("UI_Scene");
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 }

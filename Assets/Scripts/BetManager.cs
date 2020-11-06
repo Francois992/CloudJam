@@ -177,7 +177,7 @@ public class BetManager : MonoBehaviour
 
     public void ReturnToMenu()
     {
-        SceneManager.LoadScene("UI_Scene");
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
    
 }
