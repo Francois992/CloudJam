@@ -1034,6 +1034,18 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 490318111}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1610592402 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5480220129211685039, guid: acd43b68beaf94dad88329938a17541a,
+    type: 3}
+  m_PrefabInstance: {fileID: 490318111}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1610592396}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d66c524ffdcf7455dbdf50c865fe57e2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1663055158
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1765,6 +1777,31 @@ PrefabInstance:
       propertyPath: m_AnchorMin.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4782131377917996632, guid: c97a7f6043196db42aad01560ad72ba3,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4782131377917996632, guid: c97a7f6043196db42aad01560ad72ba3,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4782131377917996632, guid: c97a7f6043196db42aad01560ad72ba3,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6915402398847137402, guid: c97a7f6043196db42aad01560ad72ba3,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -12.000122
+      objectReference: {fileID: 0}
+    - target: {fileID: 8608978515690383148, guid: c97a7f6043196db42aad01560ad72ba3,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5948913241923702995, guid: c97a7f6043196db42aad01560ad72ba3,
         type: 3}
       propertyPath: m_AnchorMax.y
@@ -1947,14 +1984,9 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8608978516840573675, guid: c97a7f6043196db42aad01560ad72ba3,
         type: 3}
-      propertyPath: StartButton
+      propertyPath: musicManager
       value: 
-      objectReference: {fileID: 1764421545}
-    - target: {fileID: 8608978516840573675, guid: c97a7f6043196db42aad01560ad72ba3,
-        type: 3}
-      propertyPath: StartButtonLoad
-      value: 
-      objectReference: {fileID: 683454509}
+      objectReference: {fileID: 1610592402}
     - target: {fileID: 8608978517649951452, guid: c97a7f6043196db42aad01560ad72ba3,
         type: 3}
       propertyPath: m_AnchorMin.y
@@ -1986,6 +2018,26 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8608978517692989844, guid: c97a7f6043196db42aad01560ad72ba3,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8914702270241922906, guid: c97a7f6043196db42aad01560ad72ba3,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8914702270241922906, guid: c97a7f6043196db42aad01560ad72ba3,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8914702270241922906, guid: c97a7f6043196db42aad01560ad72ba3,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8914702270241922906, guid: c97a7f6043196db42aad01560ad72ba3,
         type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 0
