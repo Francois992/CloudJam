@@ -104,7 +104,7 @@ public class Octopus : MonoBehaviour
     [SerializeField]
     private float secondBreathTensionDecreaseDelay = 1f;
 
-   
+    private AudioSource Ouch = null; 
 
     #endregion
 
@@ -139,6 +139,8 @@ public class Octopus : MonoBehaviour
 
     private void Awake()
     {
+        Ouch = GetComponent<AudioSource>();
+
         secondBreathDuration = Random.Range(secondBreathDurationMin, secondBreathDurationMax);
         panache = secondBreathDuration;
         topSpeed = Random.Range(1, 11);
@@ -294,6 +296,8 @@ public class Octopus : MonoBehaviour
 
             HitByTrap(70f);
             Invoke("ResetSpeed", timeBetweenFirstCoconutAndSecond);
+
+            Ouch.PlayOneShot(Ouch.clip);
         }
 
         ResetRageTimer();
