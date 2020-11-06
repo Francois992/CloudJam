@@ -64,6 +64,7 @@ public class GameManager : MonoBehaviour
     }
 
     private bool isRacing = false;
+    [HideInInspector] public bool canStartRace = false;
     public bool IsRacing { get { return isRacing; } }
     private bool CountDown = false;
 
@@ -121,13 +122,14 @@ public class GameManager : MonoBehaviour
                 if (playersBetting[i].bets > 0)
                 {
                     musicManager.nbplayers = i;
+                    
                     return;
                 }
                 
             }
-            isBetting = false;
-            BetManager.instance.gameObject.SetActive(false);
-            CountDown = true;
+            BetManager.instance.StartButton.SetActive(true);
+            canStartRace = true;
+
         }
 
         if (isRacing)
@@ -173,6 +175,13 @@ public class GameManager : MonoBehaviour
             
         }
 
+    }
+
+    public void StartGame()
+    {
+        isBetting = false;
+        BetManager.instance.gameObject.SetActive(false);
+        CountDown = true;
     }
 
     public void StartRace()
