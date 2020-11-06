@@ -1266,10 +1266,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   HorseWinner: {fileID: 8202216318292437106}
   HorseWinnerName: {fileID: 8202216317268536645}
-  Player1Result: {fileID: 8202216318194568378}
-  Player2Result: {fileID: 8202216318434782794}
-  Player3Result: {fileID: 8202216319060978541}
-  Player4Result: {fileID: 8202216318688599581}
+  Player1Result: {fileID: 7904799252917917210}
+  Player2Result: {fileID: 8806504239000860048}
+  Player3Result: {fileID: 6260185543716818350}
+  Player4Result: {fileID: 8184349045199882606}
+  WinImage: {fileID: 2803830646712616744, guid: dbf40f0f5661843769b36fbe8cad2557,
+    type: 3}
+  LooseImage: {fileID: 2425529556200325030, guid: dbf40f0f5661843769b36fbe8cad2557,
+    type: 3}
   defaultSelectedButton: {fileID: 8202216318566393932}
 --- !u!1 &8202216318292437105
 GameObject:
