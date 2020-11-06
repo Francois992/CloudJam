@@ -80,6 +80,8 @@ public class AimCursor : MonoBehaviour
             if (playerController.GetButton("AButton") && canThrowCoconut)
             {
                 ThrowCoconut();
+                Hud.instance.cocoFills[player.playerId].gameObject.SetActive(true);
+                Hud.instance.cocoFills[player.playerId].fillAmount = 0;
             }
 
             if (playerController.GetButton("BButton"))
