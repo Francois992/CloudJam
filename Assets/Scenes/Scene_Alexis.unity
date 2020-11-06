@@ -281,6 +281,75 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1001 &886426461
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 6033320460224703895, guid: 94087bc8b368f9849b180d9625d01381,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -74.55274
+      objectReference: {fileID: 0}
+    - target: {fileID: 6033320460224703895, guid: 94087bc8b368f9849b180d9625d01381,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 102.150635
+      objectReference: {fileID: 0}
+    - target: {fileID: 6033320460224703895, guid: 94087bc8b368f9849b180d9625d01381,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -49.47715
+      objectReference: {fileID: 0}
+    - target: {fileID: 6033320460224703895, guid: 94087bc8b368f9849b180d9625d01381,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6033320460224703895, guid: 94087bc8b368f9849b180d9625d01381,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6033320460224703895, guid: 94087bc8b368f9849b180d9625d01381,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6033320460224703895, guid: 94087bc8b368f9849b180d9625d01381,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6033320460224703895, guid: 94087bc8b368f9849b180d9625d01381,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 6033320460224703895, guid: 94087bc8b368f9849b180d9625d01381,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6033320460224703895, guid: 94087bc8b368f9849b180d9625d01381,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6033320460224703895, guid: 94087bc8b368f9849b180d9625d01381,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6033320460224703897, guid: 94087bc8b368f9849b180d9625d01381,
+        type: 3}
+      propertyPath: m_Name
+      value: GameManager
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 94087bc8b368f9849b180d9625d01381, type: 3}
 --- !u!1 &1585028216
 GameObject:
   m_ObjectHideFlags: 0
@@ -349,6 +418,32 @@ MonoBehaviour:
   canRun: 0
   isInvinsible: 0
   isAlreadyStun: 0
+  secondBreathCheckDelay: 2
+  secondBreathSpeedBonus: 1.25
+  secondBreathDuration: 1
+  secondBreathBaseChance: 1
+  secondBreathPositionBonus:
+  - 0
+  - 3
+  - 5
+  - 8
+  secondBreathRage: 0
+  secondBreathRageMax: 3
+  secondBreathRageDecrease: 0.5
+  secondBreathRageDecreaseDelay: 1
+  secondBreathRageBonusByCoco: 0.75
+  secondBreathTension: 0
+  secondBreathTensionMax: 3
+  secondBreathTensionIncrease: 0.75
+  secondBreathTensionIncreaseDelay: 1
+  secondBreathTensionDecrease: 1
+  secondBreathTensionDecreaseDelay: 1
+  canBreathAgain: 1
+  attribute:
+    name: 
+    anecdote: 
+    uselessStat: 
+    uselessStatValue: 0
 --- !u!4 &1585028219
 Transform:
   m_ObjectHideFlags: 0

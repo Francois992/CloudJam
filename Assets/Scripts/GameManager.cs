@@ -180,8 +180,9 @@ public class GameManager : MonoBehaviour
 
     private IEnumerator EndCountDown()
     {
-        yield return new WaitForSeconds(4);
+        yield return new WaitForSeconds(2);
         gameCamera.cameraCanMove = false;
+        yield return new WaitForSeconds(2);
         for (int i = 0; i < OctoHorses.Count; i++)
         {
             OctoHorses[i].HorseCanRun(false);
