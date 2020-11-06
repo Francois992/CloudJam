@@ -292,7 +292,7 @@ public class Octopus : MonoBehaviour
         {
             isAlreadyStun = true;
 
-            HitByTrap(0.7f);
+            HitByTrap(70f);
             Invoke("ResetSpeed", timeBetweenFirstCoconutAndSecond);
         }
 
@@ -316,7 +316,7 @@ public class Octopus : MonoBehaviour
         if (malusSpeed > 1) malusSpeed /= 100;
         float malusPercent = (1 - malusSpeed);
         float malusTenacity = 1 - (malusPercent * tenacityPercent);
-        octopusSpeed = Mathf.Clamp(octopusSpeed * malusTenacity, octopusMinSpeed, octopusMaxSpeed);
+        octopusSpeed = Mathf.Clamp(octopusSpeed * malusTenacity, octopusMinSpeed/2f, octopusMaxSpeed);
     }
 
     public void HitByProjectile(float malusSpeed)

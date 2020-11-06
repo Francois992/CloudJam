@@ -11,7 +11,7 @@ public class SlowingTrap : MonoBehaviour
         //Debug.Log("Trigger");
         if (collision.gameObject.CompareTag("Poulpe"))
         {
-            //Debug.Log("Un poulpe !");
+            Debug.Log("Un poulpe !");
             //collision.gameObject.GetComponent<Octopus>().HitByTrap(1 - _speedDropRate / 100);
             collision.gameObject.GetComponent<Octopus>().HitByTrap(_speedDropRate);
         }
@@ -19,10 +19,10 @@ public class SlowingTrap : MonoBehaviour
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        //Debug.Log("Trigger");
+        Debug.Log("Trigger");
         if (collision.gameObject.CompareTag("Poulpe"))
         {
-            //Debug.Log("Un poulpe !");
+            Debug.Log("Un poulpe !");
             collision.gameObject.GetComponent<Octopus>().ResetSpeed();
         }
     }
