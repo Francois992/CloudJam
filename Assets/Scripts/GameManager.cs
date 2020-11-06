@@ -48,6 +48,8 @@ public class GameManager : MonoBehaviour
     [SerializeField]private Text countDownText = null;
     [SerializeField]private Canvas countDownCanvas = null;
 
+    private bool cursorHasBeenInstantiate = false;
+
     private bool isBetting = false;
     public bool IsBetting
     {
@@ -142,11 +144,16 @@ public class GameManager : MonoBehaviour
 
         if(!isBetting && !isRacing && CountDown)
         {
-            foreach (Player player in playersBetting)
+            if(!cursorHasBeenInstantiate)
             {
-                AimCursor cursor = Instantiate(aimCursor, gameCamera.transform, false);
-                cursor.transform.position = new Vector3(cursor.transform.position.x, cursor.transform.position.y, 5);
-                cursor.SetPlayer(player);
+                cursorHasBeenInstantiate = true;
+
+                foreach (Player player in playersBetting)
+                {
+                    AimCursor cursor = Instantiate(aimCursor, gameCamera.transform, false);
+                    cursor.transform.position = new Vector3(cursor.transform.position.x, cursor.transform.position.y, 5);
+                    cursor.SetPlayer(player);
+                }
             }
 
             if (elapsedTimeCountDown <= 5)
