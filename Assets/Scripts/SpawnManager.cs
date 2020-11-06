@@ -62,14 +62,9 @@ public class SpawnManager : MonoBehaviour
 
         if (100 * Random.value > chanceForObstacleToSpawn)
         {
-            if (Random.value > 0.5f)
-            {
-                toSpawn = slowTrap;
-            }
-            else
-            {
-                toSpawn = obstacle;
-            }
+            
+            toSpawn = slowTrap;
+           
 
             Instantiate(toSpawn);
             

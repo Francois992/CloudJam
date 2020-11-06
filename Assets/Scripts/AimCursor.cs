@@ -9,6 +9,12 @@ public class AimCursor : MonoBehaviour
     public SpriteRenderer sprite;
 
     [SerializeField]
+    public Color p1Color = new Color(36, 130, 255);
+    public Color p2Color = new Color(5, 255, 10);
+    public Color p3Color = new Color(255, 235, 30);
+    public Color p4Color = new Color(255, 25, 25);
+
+    [SerializeField]
     private Player player;
 
     [SerializeField]
@@ -48,16 +54,16 @@ public class AimCursor : MonoBehaviour
         switch (player.playerId)
         {
             case 0:
-                sprite.color = Color.HSVToRGB(214, 100, -20);
+                sprite.color = p1Color;
                 break;
             case 1:
-                sprite.color = Color.HSVToRGB(123, 100, -29);
+                sprite.color = p2Color;
                 break;
             case 2:
-                sprite.color = Color.HSVToRGB(55, 100, -21);
+                sprite.color = p3Color;
                 break;
             case 3:
-                sprite.color = Color.HSVToRGB(0, 100, -23);
+                sprite.color = p4Color;
                 break;
         }
     }
@@ -74,6 +80,8 @@ public class AimCursor : MonoBehaviour
             if (playerController.GetButton("AButton") && canThrowCoconut)
             {
                 ThrowCoconut();
+                Hud.instance.cocoFills[player.playerId].gameObject.SetActive(true);
+                Hud.instance.cocoFills[player.playerId].fillAmount = 0;
             }
 
             if (playerController.GetButton("BButton"))

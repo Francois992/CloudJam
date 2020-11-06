@@ -56,6 +56,10 @@ public class Octopus : MonoBehaviour
 
     [SerializeField]
     private float secondBreathDuration = 1f;
+    [SerializeField]
+    private float secondBreathDurationMax = 0.5f;
+    [SerializeField]
+    private float secondBreathDurationMin = 2f;
 
     [SerializeField]
     private float secondBreathBaseChance = 1f;
@@ -135,6 +139,7 @@ public class Octopus : MonoBehaviour
 
     private void Awake()
     {
+        secondBreathDuration = Random.Range(secondBreathDurationMin, secondBreathDurationMax);
         panache = secondBreathDuration;
         topSpeed = Random.Range(1, 11);
         tenacity = Random.Range(0, 3);
@@ -287,7 +292,7 @@ public class Octopus : MonoBehaviour
         {
             isAlreadyStun = true;
 
-            HitByTrap(0.7f);
+            HitByTrap(70f);
             Invoke("ResetSpeed", timeBetweenFirstCoconutAndSecond);
         }
 
@@ -311,7 +316,7 @@ public class Octopus : MonoBehaviour
         if (malusSpeed > 1) malusSpeed /= 100;
         float malusPercent = (1 - malusSpeed);
         float malusTenacity = 1 - (malusPercent * tenacityPercent);
-        octopusSpeed = Mathf.Clamp(octopusSpeed * malusTenacity, octopusMinSpeed, octopusMaxSpeed);
+        octopusSpeed = Mathf.Clamp(octopusSpeed * malusTenacity, octopusMinSpeed/2f, octopusMaxSpeed);
     }
 
     public void HitByProjectile(float malusSpeed)

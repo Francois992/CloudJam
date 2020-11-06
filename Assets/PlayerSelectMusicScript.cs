@@ -8,7 +8,7 @@ public class PlayerSelectMusicScript : MonoBehaviour
 
     public MusicScript musicManager;
 
-    private int nbPlayers;
+    public int nbPlayers;
     public int musicVolume = 1;
     public AudioSource source0Player;
     public AudioSource source1Player;
@@ -38,7 +38,7 @@ public class PlayerSelectMusicScript : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        nbPlayers = musicManager.nbplayers;
+        //nbPlayers = musicManager.nbplayers;
 
         switch (nbPlayers)
         {
