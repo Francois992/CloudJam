@@ -302,7 +302,7 @@ MonoBehaviour:
     m_MinSize: 2
     m_MaxSize: 252
     m_Alignment: 3
-    m_AlignByGeometry: 0
+    m_AlignByGeometry: 1
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
