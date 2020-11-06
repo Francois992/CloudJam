@@ -48,7 +48,7 @@ public class AimCursor : MonoBehaviour
         switch (player.playerId)
         {
             case 0:
-                sprite.color = Color.blue;
+                sprite.color = Color.HSVToRGB(214, 100, -20);
                 break;
             case 1:
                 sprite.color = Color.green;
