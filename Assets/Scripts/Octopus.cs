@@ -129,6 +129,7 @@ public class Octopus : MonoBehaviour
 
     private void Awake()
     {
+        panache = secondBreathDuration;
         topSpeed = Random.Range(1, 11);
         tenacity = Random.Range(0, 3);
 

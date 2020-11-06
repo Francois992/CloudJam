@@ -65,6 +65,8 @@ public class GameManager : MonoBehaviour
     public bool IsRacing { get { return isRacing; } }
     private bool CountDown = false;
 
+    public AimCursor aimCursor;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -139,8 +141,15 @@ public class GameManager : MonoBehaviour
         }
 
         if(!isBetting && !isRacing && CountDown)
-        {    
-            if(elapsedTimeCountDown <= 5)
+        {
+            foreach (Player player in playersBetting)
+            {
+                AimCursor cursor = Instantiate(aimCursor, gameCamera.transform, false);
+                cursor.transform.position = new Vector3(cursor.transform.position.x, cursor.transform.position.y, 5);
+                cursor.SetPlayer(player);
+            }
+
+            if (elapsedTimeCountDown <= 5)
             {
                 countDownCanvas.gameObject.SetActive(true);
 
