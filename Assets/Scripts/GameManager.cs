@@ -70,6 +70,8 @@ public class GameManager : MonoBehaviour
 
     public AimCursor aimCursor;
 
+    public Slider courseSlider;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -79,6 +81,8 @@ public class GameManager : MonoBehaviour
         PlayerBets.Add(player4Bets);
 
         countDownCanvas.gameObject.SetActive(false);
+
+        courseSlider.maxValue = gameLengthInSec;
     }
 
     private void FixedUpdate()
@@ -132,6 +136,7 @@ public class GameManager : MonoBehaviour
             //musicManager.isStartingRace = true;
 
             elapsedTime += Time.deltaTime;
+            courseSlider.value = elapsedTime;
 
             if(elapsedTime >= gameLengthInSec)
             {
