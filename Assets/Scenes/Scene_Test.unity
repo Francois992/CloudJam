@@ -19140,6 +19140,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1908791726}
     m_Modifications:
+    - target: {fileID: 814418535, guid: c97a7f6043196db42aad01560ad72ba3, type: 3}
+      propertyPath: m_Text
+      value: Off Road
+      objectReference: {fileID: 0}
+    - target: {fileID: 1269903838, guid: c97a7f6043196db42aad01560ad72ba3, type: 3}
+      propertyPath: m_Text
+      value: Maximum Speed
+      objectReference: {fileID: 0}
+    - target: {fileID: 1716716170, guid: c97a7f6043196db42aad01560ad72ba3, type: 3}
+      propertyPath: m_Text
+      value: Name
+      objectReference: {fileID: 0}
+    - target: {fileID: 2135786048, guid: c97a7f6043196db42aad01560ad72ba3, type: 3}
+      propertyPath: m_Text
+      value: Flair
+      objectReference: {fileID: 0}
     - target: {fileID: 1188212665424988940, guid: c97a7f6043196db42aad01560ad72ba3,
         type: 3}
       propertyPath: m_Color.r
@@ -19175,6 +19191,26 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2735924997872051262, guid: c97a7f6043196db42aad01560ad72ba3,
+        type: 3}
+      propertyPath: m_Text
+      value: Off Road
+      objectReference: {fileID: 0}
+    - target: {fileID: 2735924997993029511, guid: c97a7f6043196db42aad01560ad72ba3,
+        type: 3}
+      propertyPath: m_Text
+      value: Maximum Speed
+      objectReference: {fileID: 0}
+    - target: {fileID: 2735924998582463699, guid: c97a7f6043196db42aad01560ad72ba3,
+        type: 3}
+      propertyPath: m_Text
+      value: Name
+      objectReference: {fileID: 0}
+    - target: {fileID: 2735924998731525145, guid: c97a7f6043196db42aad01560ad72ba3,
+        type: 3}
+      propertyPath: m_Text
+      value: Flair
+      objectReference: {fileID: 0}
     - target: {fileID: 3496250990754159516, guid: c97a7f6043196db42aad01560ad72ba3,
         type: 3}
       propertyPath: m_AnchorMin.y
@@ -19214,6 +19250,26 @@ PrefabInstance:
         type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5187040222264618865, guid: c97a7f6043196db42aad01560ad72ba3,
+        type: 3}
+      propertyPath: m_Text
+      value: Off Road
+      objectReference: {fileID: 0}
+    - target: {fileID: 5187040223097710492, guid: c97a7f6043196db42aad01560ad72ba3,
+        type: 3}
+      propertyPath: m_Text
+      value: Name
+      objectReference: {fileID: 0}
+    - target: {fileID: 5187040223216297814, guid: c97a7f6043196db42aad01560ad72ba3,
+        type: 3}
+      propertyPath: m_Text
+      value: Flair
+      objectReference: {fileID: 0}
+    - target: {fileID: 5187040223418438856, guid: c97a7f6043196db42aad01560ad72ba3,
+        type: 3}
+      propertyPath: m_Text
+      value: Maximum Speed
       objectReference: {fileID: 0}
     - target: {fileID: 5948913241923702995, guid: c97a7f6043196db42aad01560ad72ba3,
         type: 3}
@@ -19239,6 +19295,26 @@ PrefabInstance:
         type: 3}
       propertyPath: m_AnchoredPosition.y
       value: -12.000122
+      objectReference: {fileID: 0}
+    - target: {fileID: 6996727187542816315, guid: c97a7f6043196db42aad01560ad72ba3,
+        type: 3}
+      propertyPath: m_Text
+      value: Name
+      objectReference: {fileID: 0}
+    - target: {fileID: 6996727187660355313, guid: c97a7f6043196db42aad01560ad72ba3,
+        type: 3}
+      propertyPath: m_Text
+      value: Flair
+      objectReference: {fileID: 0}
+    - target: {fileID: 6996727187985171823, guid: c97a7f6043196db42aad01560ad72ba3,
+        type: 3}
+      propertyPath: m_Text
+      value: Maximum Speed
+      objectReference: {fileID: 0}
+    - target: {fileID: 6996727188906491606, guid: c97a7f6043196db42aad01560ad72ba3,
+        type: 3}
+      propertyPath: m_Text
+      value: Off Road
       objectReference: {fileID: 0}
     - target: {fileID: 8434443864536744874, guid: c97a7f6043196db42aad01560ad72ba3,
         type: 3}
@@ -61528,6 +61604,15 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1908791726}
     m_Modifications:
+    - target: {fileID: 8202216317176997465, guid: e4ee4d42ac2d5724a8a415b95a63110a,
+        type: 3}
+      propertyPath: m_Text
+      value: 'Pay
+
+        your
+
+        Bills !'
+      objectReference: {fileID: 0}
     - target: {fileID: 8202216318201809158, guid: e4ee4d42ac2d5724a8a415b95a63110a,
         type: 3}
       propertyPath: m_Name
