@@ -55,8 +55,8 @@ public class ResultManager : MonoBehaviour
         {
             isHorseWinnerNameSet = true;
 
-            HorseWinner.sprite = GameManager.instance.OctoHorses[0].GetComponent<SpriteRenderer>().sprite;
-            HorseWinnerName.text += " " + GameManager.instance.OctoHorses[0].attribute.name;
+            HorseWinner.sprite = GameManager.instance.octoHorseWinner.GetComponent<SpriteRenderer>().sprite;
+            HorseWinnerName.text += " " + GameManager.instance.octoHorseWinner.attribute.name;
         }
 
         if (GameManager.instance.Players[0].hasWon)
