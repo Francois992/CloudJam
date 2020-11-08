@@ -71,6 +71,7 @@ public class GameManager : MonoBehaviour
     public AimCursor aimCursor;
 
     public Octopus octoHorseWinner;
+    public Slider courseSlider;
 
     // Start is called before the first frame update
     void Start()
@@ -81,6 +82,8 @@ public class GameManager : MonoBehaviour
         PlayerBets.Add(player4Bets);
 
         countDownCanvas.gameObject.SetActive(false);
+
+        courseSlider.maxValue = gameLengthInSec;
     }
 
     private void FixedUpdate()
@@ -134,6 +137,7 @@ public class GameManager : MonoBehaviour
             //musicManager.isStartingRace = true;
 
             elapsedTime += Time.deltaTime;
+            courseSlider.value = elapsedTime;
 
             if(elapsedTime >= gameLengthInSec)
             {
@@ -204,11 +208,8 @@ public class GameManager : MonoBehaviour
     private IEnumerator EndCountDown()
     {
         yield return new WaitForSeconds(2);
-        
         gameCamera.cameraCanMove = false;
-
         yield return new WaitForSeconds(2);
-        
         for (int i = 0; i < OctoHorses.Count; i++)
         {
             OctoHorses[i].HorseCanRun(false);
