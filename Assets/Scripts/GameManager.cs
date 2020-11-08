@@ -70,6 +70,8 @@ public class GameManager : MonoBehaviour
 
     public AimCursor aimCursor;
 
+    public Octopus octoHorseWinner;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -202,10 +204,11 @@ public class GameManager : MonoBehaviour
     private IEnumerator EndCountDown()
     {
         yield return new WaitForSeconds(2);
+        
         gameCamera.cameraCanMove = false;
-        OctoHorsesSorted = OctoHorses;
-        OctoHorsesSorted.Sort((s1, s2) => s2.transform.position.x.CompareTo(s1.transform.position.x));
+
         yield return new WaitForSeconds(2);
+        
         for (int i = 0; i < OctoHorses.Count; i++)
         {
             OctoHorses[i].HorseCanRun(false);
@@ -216,19 +219,19 @@ public class GameManager : MonoBehaviour
 
         for (int j = 0; j < playersBetting.Count; j++)
         {
-            if(OctoHorsesSorted[0] == OctoHorses[0])
+            if(octoHorseWinner == OctoHorses[0])
             {
                 if (PlayerBets[j][0] == 1) Players[j].hasWon = true;
             }
-            else if (OctoHorsesSorted[0] == OctoHorses[1])
+            else if (octoHorseWinner == OctoHorses[1])
             {
                 if (PlayerBets[j][0] == 2) Players[j].hasWon = true;
             }
-            else if (OctoHorsesSorted[0] == OctoHorses[2])
+            else if (octoHorseWinner == OctoHorses[2])
             {
                 if (PlayerBets[j][0] == 3) Players[j].hasWon = true;
             }
-            else if (OctoHorsesSorted[0] == OctoHorses[3])
+            else if (octoHorseWinner == OctoHorses[3])
             {
                 if (PlayerBets[j][0] == 4) Players[j].hasWon = true;
             }

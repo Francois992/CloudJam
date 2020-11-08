@@ -17,6 +17,7 @@ public class EndRace : MonoBehaviour
         if (collision.gameObject.CompareTag("Poulpe"))
         {
             Debug.Log("It's a poulpe !");
+            gm.octoHorseWinner = collision.gameObject.GetComponent<Octopus>();
             gm.EndRace();
         }
     }
