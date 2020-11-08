@@ -294,7 +294,7 @@ public class Octopus : MonoBehaviour
         {
             isAlreadyStun = true;
 
-            HitByTrap(70f);
+            HitByTrap(60f);
             Invoke("ResetSpeed", timeBetweenFirstCoconutAndSecond);
 
             Ouch.PlayOneShot(Ouch.clip);

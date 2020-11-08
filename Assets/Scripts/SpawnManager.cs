@@ -66,12 +66,7 @@ public class SpawnManager : MonoBehaviour
             toSpawn = slowTrap;
            
 
-            Instantiate(toSpawn);
-            
-            Vector2 newPos = spawnObstable.transform.position;
-            newPos.x += 5;
-            newPos.y = ySpawnLocation[i];
-            toSpawn.transform.position = newPos;
+            Instantiate(toSpawn, new Vector3(horseSpawnLocation[i].position.x, horseSpawnLocation[i].position.y), Quaternion.identity);
         }
     }
 }
