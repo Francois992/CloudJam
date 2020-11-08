@@ -73,9 +73,13 @@ public class GameManager : MonoBehaviour
     public Octopus octoHorseWinner;
     public Slider courseSlider;
 
+    public GameObject tutoScreen;
+
     // Start is called before the first frame update
     void Start()
     {
+        tutoScreen.SetActive(false);
+
         PlayerBets.Add(player1Bets);
         PlayerBets.Add(player2Bets);
         PlayerBets.Add(player3Bets);

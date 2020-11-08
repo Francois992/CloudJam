@@ -27,6 +27,12 @@ public class PlayerNumScreen : MonoBehaviour
         EventSystem.current.SetSelectedGameObject(defaultSelectedButton);
     }
 
+    private void OnEnable()
+    {
+        EventSystem.current.SetSelectedGameObject(null);
+        EventSystem.current.SetSelectedGameObject(defaultSelectedButton);
+    }
+
     public void TwoPlayers()
     {
         GameManager.instance.playerNumber = 2;
@@ -48,5 +54,11 @@ public class PlayerNumScreen : MonoBehaviour
         gameObject.SetActive(false);
         BetManager.instance.gameObject.SetActive(true);
         GameManager.instance.AddPlayers();
+    }
+
+    public void DisplayTuto()
+    {
+        GameManager.instance.tutoScreen.SetActive(true);
+        PlayerNumScreen.instance.gameObject.SetActive(false);
     }
 }
